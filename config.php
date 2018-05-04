@@ -15,13 +15,13 @@ return [
 
   '#content-types' => [
 
-    'user-info' => [
-      '#label' => 'General Info',
-      '#description' => 'Add some general info.',
+    'general-settings' => [
+      '#label' => 'General Settings',
+      '#description' => 'Configure your theme.',
       '#max-values' => 1,
       '#fields' => [
 
-				'image-vr' => [
+				'logo' => [
           '#label' => 'Logo',
           '#description' => 'Upload an image.',
           '#help' => 'Upload an image.',
@@ -53,11 +53,11 @@ return [
 
         'space-link-title' => [
           '#label' => 'Space Link Title',
-          '#description' => 'Enter a title.',
-          '#help' => 'Enter a title.',
+          '#description' => 'Enter a short space link title',
+          '#help' => 'The title is shown in front of the space link image.',
           '#type' => 'textfield',
 					'#contentformat' => 'html/text',
-					'#maxlength' => 300,
+					'#maxlength' => 1000,
           '#required' => true,
         ],
 
@@ -76,7 +76,6 @@ return [
           '#description' => 'Select a space to link to.',
           '#help' => 'Select a space to link to.',
           '#type' => 'space-reference',
-          '#file-extension' => ['jpg', 'png', 'gif'],
           '#required' => true,
           '#published' => true,
         ],

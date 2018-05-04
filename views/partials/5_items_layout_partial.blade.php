@@ -32,9 +32,16 @@
 		<!-- center, left //-->
 		<a-entity
 				position="-1.15 0 0.09"
-				rotation="0 10 0"
-				geometry="primitive: plane; width: 1; height: 0.5"
-				material="shader: flat; src: url({{ $content['space-links'][$start_counter]['space-link-image']['space-link-image-resized']['#uri']['#value'] }})">
+				rotation="0 10 0">
+				<a-entity
+						geometry="primitive: plane; width: 1; height: 0.5"
+						material="shader: flat; src: url({{ $content['space-links'][$start_counter]['space-link-image']['space-link-image-resized']['#uri']['#value'] }})">
+				</a-entity>
+		 		<a-entity
+						geometry="primitive: plane; width: 1; height: 0.5"
+        		position="0 0 0.01"
+        		material="shader: html; target: #space-link-title-texture-cid-{{ $content['space-links'][$start_counter]['space-link-title']['#content-id'] }}; transparent: true; ratio: width">
+    		</a-entity>
 		</a-entity>
 		<!-- center //-->
 		<a-entity

@@ -20,28 +20,30 @@ $menu_block_nav_hover_color = "#ff0000";
  				</a-assets>
 
 
-				<a-entity 
-						id="camera"
-						look-controls 
-            camera>
-        		<a-entity
-            		cursor="fuse: false; rayOrigin: mouse"
-								raycaster="objects: .navigation"
-                id="cursor"
-								/*position="0 0 -1.9"
-                geometry="primitive: circle; radius: 0.02;"
-                material="color: #FFFFFF; shader: flat;"
-                visible="false"*/>
-        		</a-entity>
+				 <a-entity id="camera-wrapper" position="0 1.6 0">
+            <a-entity
+                id="camera"
+                camera="far: 10000; fov: 80; near: 0.1"
+                look-controls>
+                <a-entity
+                    cursor="fuse: false; rayOrigin: mouse"
+                    raycaster="near: 0.1"
+                    id="cursor"
+                    position="0 0 -1.9"
+                    geometry="primitive: circle; radius: 0.02;"
+                    material="color: #FFFFFF; shader: flat;"
+                    visible="false">
+                </a-entity>
+            </a-entity>
         </a-entity>
 
 
-				<a-entity laser-controls="hand: left" raycaster="objects: .navigation; near: 0.5" line="color: #FFFFFF" class="laser-controls"></a-entity>
-        <a-entity laser-controls="hand: right" raycaster="objects: .navigation; near: 0.5" line="color: #FFFFFF" class="laser-controls"></a-entity>
+				<a-entity laser-controls="hand: left" raycaster="objects: .navigation; near: 0.5" line="color: #FFFFFF" class="laser-controls" visible="false"></a-entity>
+        <a-entity laser-controls="hand: right" raycaster="objects: .navigation; near: 0.5" line="color: #FFFFFF" class="laser-controls" visible="false"></a-entity>
 
 
 				@if (isset($content['space-links']))
-				<a-entity position="0 0.3 -2.5">	
+				<a-entity position="0 1.6 -1.5">	
 
 						@if (count($content['space-links']) > 0 && count($content['space-links']) <= 5)
 
@@ -151,5 +153,31 @@ $menu_block_nav_hover_color = "#ff0000";
 				@endif
 
     </a-scene>
+
+
+		<div class="cover">
+    </div>
+
+
+    <div id="space-title-texture" style="color:#FFFFFF;background-color:#606060">
+    {!! $space_title !!}
+    </div>
+
+
+    @if (isset($content['space-links']))
+        @foreach ($content['space-links'] as $space_link)
+        		<div id="space-link-title-texture-cid-{{ $space_link['space-link-title']['#content-id'] }}" class="space-link-title-texture">
+            {!! trim($space_link['space-link-title']['#value']) !!}
+        		</div>
+        @endforeach
+    @endif
+
+
+    <script>
+    (function() {
+        /* DOM is loaded */
+        //isvr_assets.init('{{ $space_url }}/content/photo-spheres');
+    })();
+    </script>
 
 @endsection
