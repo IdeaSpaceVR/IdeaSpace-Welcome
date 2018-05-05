@@ -27,7 +27,7 @@ $menu_block_nav_hover_color = "#ff0000";
                 look-controls>
                 <a-entity
                     cursor="fuse: false; rayOrigin: mouse"
-                    raycaster="near: 0.1"
+                    raycaster="objects: .collidable"
                     id="cursor"
                     position="0 0 -1.9"
                     geometry="primitive: circle; radius: 0.02;"
@@ -38,8 +38,8 @@ $menu_block_nav_hover_color = "#ff0000";
         </a-entity>
 
 
-				<a-entity laser-controls="hand: left" raycaster="objects: .navigation; near: 0.5" line="color: #FFFFFF" class="laser-controls" visible="false"></a-entity>
-        <a-entity laser-controls="hand: right" raycaster="objects: .navigation; near: 0.5" line="color: #FFFFFF" class="laser-controls" visible="false"></a-entity>
+				<a-entity laser-controls="hand: left" raycaster="objects: .collidable; near: 0.5" line="color: #FFFFFF" class="laser-controls" visible="false"></a-entity>
+        <a-entity laser-controls="hand: right" raycaster="objects: .collidable; near: 0.5" line="color: #FFFFFF" class="laser-controls" visible="false"></a-entity>
 
 
 				@if (isset($content['space-links']))
@@ -167,7 +167,7 @@ $menu_block_nav_hover_color = "#ff0000";
     @if (isset($content['space-links']))
         @foreach ($content['space-links'] as $space_link)
         		<div id="space-link-title-texture-cid-{{ $space_link['space-link-title']['#content-id'] }}" class="space-link-title-texture">
-            {!! trim($space_link['space-link-title']['#value']) !!}
+            {!! $space_link['space-link-title']['#value'] !!}
         		</div>
         @endforeach
     @endif

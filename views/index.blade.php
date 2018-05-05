@@ -27,9 +27,9 @@
     <link rel="stylesheet" href="{{ url($theme_dir . '/css/style.css') }}">
     <script src="{{ url($theme_dir . '/js/aframe/aframe-v0.8.2.min.js') }}"></script>
     <script src="{{ url($theme_dir . '/js/aframe-gradient-sky/gradientsky.min.js') }}"></script>
-    <script src="{{ url($theme_dir . '/js/aframe-gif-shader/aframe-gif-shader.min.js') }}"></script>
     <script src="{{ url($theme_dir . '/js/aframe-html-shader/aframe-html-shader.min.js') }}"></script>
     <script src="{{ url($theme_dir . '/js/aframe-rounded-component/aframe-rounded-component.min.js') }}"></script>
+    <script src="{{ url($theme_dir . '/js/aframe-animation/aframe-animation-component.min.js') }}"></script>
     <script src="{{ url($theme_dir . '/js/ideaspacevr/isvr-scene.js') }}"></script>
     <script src="{{ url($theme_dir . '/js/ideaspacevr/isvr-menu-block-nav.js') }}"></script>
 </head>

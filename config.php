@@ -80,6 +80,15 @@ return [
           '#published' => true,
         ],
 
+        'space-link-background-color' => [
+          '#label' => 'Space Link Background Color',
+          '#description' => 'Select a background color.',
+          '#help' => 'Select a background color.',
+          '#type' => 'color',
+					'#default_value' => '#FFFFFF',
+          '#required' => false,
+        ],
+
       ], /* fields */
 
     ], /*  */
