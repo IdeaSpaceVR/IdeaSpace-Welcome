@@ -55,8 +55,7 @@ AFRAME.registerComponent('isvr-scene', {
 
         }
 
-
-
+				/* trigger custom events */
 				var collidables = document.querySelectorAll('.collidable');
 				for (var j = 0; j < collidables.length; j++) {
 
@@ -68,9 +67,6 @@ AFRAME.registerComponent('isvr-scene', {
 								e.target.emit('isvr_mouseleave');
 						});
 				}
-
-
-
     }
 
 });
