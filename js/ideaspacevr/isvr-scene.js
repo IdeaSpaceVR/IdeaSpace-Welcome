@@ -55,6 +55,22 @@ AFRAME.registerComponent('isvr-scene', {
 
         }
 
+
+
+				var collidables = document.querySelectorAll('.collidable');
+				for (var j = 0; j < collidables.length; j++) {
+
+						collidables[j].addEventListener('mouseenter', function(e) {
+								e.target.emit('isvr_mouseenter');
+						});
+
+						collidables[j].addEventListener('mouseleave', function(e) {
+								e.target.emit('isvr_mouseleave');
+						});
+				}
+
+
+
     }
 
 });
