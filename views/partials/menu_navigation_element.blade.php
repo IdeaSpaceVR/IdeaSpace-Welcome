@@ -1,6 +1,10 @@
+@php
+$pos_y = -1.3;
+@endphp
+
 @if ($number_elements == 2)
 
-<a-entity position="0 -1.5 0">
+<a-entity position="0 {{ $pos_y }} 0">
 		<a-triangle 
 				class="navigation"  
 				isvr-menu-block-nav-back 
@@ -39,7 +43,7 @@
 
 @elseif ($number_elements == 3)
 
-<a-entity position="0 -1.5 0">
+<a-entity position="0 {{ $pos_y }} 0">
 		<a-triangle 
 				class="navigation"  
 				isvr-menu-block-nav-back 
@@ -85,7 +89,7 @@
 
 @elseif ($number_elements == 4)
 
-<a-entity position="0 -1.5 0">
+<a-entity position="0 {{ $pos_y }} 0">
 		<a-triangle 
 				class="navigation"  
 				isvr-menu-block-nav-back 

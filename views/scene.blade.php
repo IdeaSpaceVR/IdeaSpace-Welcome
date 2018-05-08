@@ -49,7 +49,18 @@ $menu_block_nav_hover_color = "#ff0000";
 						@if (isset($content['general-settings'][0]['logo']))
 						 <a-entity
                 position="0 1.4 0"
-                geometry="primitive: plane; width: 1; height: 0.5"
+                scale="0.5 0.5"
+								@if ($content['general-settings'][0]['logo-aspect-ratio']['#value'] == '4-3')
+                		geometry="primitive: plane; width: 1; height: 0.75"
+                @elseif ($content['general-settings'][0]['logo-aspect-ratio']['#value'] == '3-4')
+                		geometry="primitive: plane; width: 0.75; height: 1"
+                @elseif ($content['general-settings'][0]['logo-aspect-ratio']['#value'] == '16-9')
+                		geometry="primitive: plane; width: 1; height: 0.5625"
+                @elseif ($content['general-settings'][0]['logo-aspect-ratio']['#value'] == '9-16')
+                		geometry="primitive: plane; width: 0.5625; height: 1"
+                @elseif ($content['general-settings'][0]['logo-aspect-ratio']['#value'] == '1-1')
+                		geometry="primitive: plane; width: 1; height: 1"
+                @endif
                 material="shader: flat; src: url({{ $content['general-settings'][0]['logo']['logo-image-resized']['#uri']['#value'] }})">
             </a-entity>
 						@else

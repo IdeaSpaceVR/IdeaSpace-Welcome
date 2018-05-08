@@ -27,7 +27,17 @@ return [
           '#help' => 'Upload an image.',
           '#type' => 'image',
           '#required' => false,
+					'#content-preview-image' => true,
           '#file-extension' => ['jpg', 'png'],
+        ],
+
+				'logo-aspect-ratio' => [
+          '#label' => 'Logo Aspect Ratio',
+          '#description' => 'If your image appears distorted, try changing the aspect ratio.',
+          '#help' => 'If your image appears distorted, try changing the aspect ratio.',
+          '#type' => 'options-select',
+          '#options' => ['4-3' => '4 : 3', '3-4' => '3 : 4', '16-9' => '16 : 9', '9-16' => '9 : 16', '1-1' => '1 : 1'],
+          '#required' => true,
         ],
 
         'space-title-color' => [
