@@ -16,7 +16,7 @@ AFRAME.registerComponent('isvr-scene', {
 
         if (!AFRAME.utils.device.checkHeadsetConnected()) {
             //document.querySelector('#no-hmd-intro').setAttribute('visible', true);
-            document.querySelector('#cursor').setAttribute('geometry', { radius: 0.04 });
+            //document.querySelector('#cursor').setAttribute('geometry', { radius: 0.04 });
         }
 
         this.el.addEventListener('enter-vr', function() {
@@ -26,14 +26,23 @@ AFRAME.registerComponent('isvr-scene', {
             }
 
 
-						/* show controllers only in VR */
-						var laser_controls = document.querySelectorAll('.laser-controls');
-            for (var i = 0; i < laser_controls.length; i++) {
-                laser_controls[i].setAttribute('visible', true);
-            }
+						var sceneEl = document.querySelector('a-scene');
+
+						var lcLeftEl = document.createElement('a-entity');
+						lcLeftEl.setAttribute('laser-controls', {hand: 'left'});
+						lcLeftEl.setAttribute('raycaster', {objects: '.collidable', near: 0.5});
+						lcLeftEl.setAttribute('line', {color: '#FFFFFF'});
+						lcLeftEl.setAttribute('class', 'laser-controls');
+						sceneEl.appendChild(lcLeftEl);
+
+						var lcRightEl = document.createElement('a-entity');
+						lcRightEl.setAttribute('laser-controls', {hand: 'right'});
+						lcRightEl.setAttribute('raycaster', {objects: '.collidable', near: 0.5});
+						lcRightEl.setAttribute('line', {color: '#FFFFFF'});
+						lcRightEl.setAttribute('class', 'laser-controls');
+						sceneEl.appendChild(lcRightEl);
 
             document.querySelector('a-scene').addState('entered-vr');
-
 
         });
 
@@ -43,7 +52,7 @@ AFRAME.registerComponent('isvr-scene', {
 
         });
 
-        var laser_controls = document.querySelectorAll('.laser-controls');
+        /*var laser_controls = document.querySelectorAll('.laser-controls');
 
         for (var i = 0; i < laser_controls.length; i++) {
 
@@ -53,7 +62,7 @@ AFRAME.registerComponent('isvr-scene', {
                 document.querySelector('#cursor').setAttribute('visible', false);
             });
 
-        }
+        }*/
 
 				/* trigger custom events */
 				var collidables = document.querySelectorAll('.collidable');

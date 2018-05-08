@@ -38,12 +38,29 @@ $menu_block_nav_hover_color = "#ff0000";
         </a-entity>
 
 
-				<a-entity laser-controls="hand: left" raycaster="objects: .collidable; near: 0.5" line="color: #FFFFFF" class="laser-controls" visible="false"></a-entity>
-        <a-entity laser-controls="hand: right" raycaster="objects: .collidable; near: 0.5" line="color: #FFFFFF" class="laser-controls" visible="false"></a-entity>
+				<!--a-entity laser-controls="hand: left" raycaster="objects: .collidable; near: 0.5" line="color: #FFFFFF" class="laser-controls" visible="false"></a-entity>
+        <a-entity laser-controls="hand: right" raycaster="objects: .collidable; near: 0.5" line="color: #FFFFFF" class="laser-controls" visible="false"></a-entity//-->
 
 
 				@if (isset($content['space-links']))
-				<a-entity position="0 1.6 -1.5">	
+				<a-entity position="0 1.6 -2.2">	
+
+
+						@if (isset($content['general-settings'][0]['logo']))
+						 <a-entity
+                position="0 1.4 0"
+                geometry="primitive: plane; width: 1; height: 0.5"
+                material="shader: flat; src: url({{ $content['general-settings'][0]['logo']['logo-image-resized']['#uri']['#value'] }})">
+            </a-entity>
+						@else
+						<a-entity
+								geometry="primitive: plane; width: 4; height: 0.5"
+								position="0 1.4 0"
+								material="shader: html; target: #space-title-texture; transparent: true; ratio: width">
+						</a-entity>
+						@endif
+
+
 
 						@if (count($content['space-links']) > 0 && count($content['space-links']) <= 5)
 
@@ -159,7 +176,7 @@ $menu_block_nav_hover_color = "#ff0000";
     </div>
 
 
-    <div id="space-title-texture" style="color:#FFFFFF;background-color:#606060">
+    <div id="space-title-texture" style="color:@if (isset($content['general-settings'][0]['space-title-color'])) {{ $content['general-settings'][0]['space-title-color']['#value'] }} @else #FFFFFF @endif">
     {!! $space_title !!}
     </div>
 

@@ -9,8 +9,20 @@
     background-color: #000000;
 }
 
+#space-title-texture {
+    width: 1024px;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: -2;
+		background-color: transparent;
+		font-family: Verdana, Geneva, sans-serif;
+		text-align: center;
+		font-size: 52px;
+}
+
 .space-link-title-texture {
-    /*width: 2048px;*/
+    /*width: 256px;*/
     width: 512px;
 		position: fixed;
 		top: 0;
@@ -23,18 +35,18 @@
 }
 
 .space-link-title-texture h1 {
-	font-size: 48px;
+	font-size: 66px;
 }
 
 .space-link-title-texture h2 {
-	font-size: 41px;
+	font-size: 58px;
 }
 
 .space-link-title-texture h3 {
-	 font-size: 37px;
+	 font-size: 47px;
 }
 
 .space-link-title-texture p {
-	 font-size: 34px;
+	 font-size: 44px;
 }
 

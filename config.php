@@ -30,6 +30,15 @@ return [
           '#file-extension' => ['jpg', 'png'],
         ],
 
+        'space-title-color' => [
+          '#label' => 'Space Title Color',
+          '#description' => 'Select a text color.',
+          '#help' => 'Select a text color.',
+          '#type' => 'color',
+					'#default_value' => '#FFFFFF',
+          '#required' => false,
+        ],
+
 				'environment' => [
           '#label' => 'Environment',
           '#description' => 'Select an environment.',
