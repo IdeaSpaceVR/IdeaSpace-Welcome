@@ -1,4 +1,9 @@
-<a-entity id="{{ $id }}" position="{{ $position }}" visible="{{ $visible }}">
+<a-entity 
+		id="{{ $id }}" 
+		position="{{ $position }}" 
+		visible="{{ $visible }}"
+		animation__slideinleft="property: position; dur: 500; to: 0 0 0.1; easing: easeOutElastic; startEvents:isvr_navigation_click"
+		animation__slideoutright="property: position; dur: 200; from: 0 0 0.1; to: 0 0 0.0001; startEvents:isvr_navigation_click">
 
 		@if ($count == ($start_counter + 1))
 
@@ -570,22 +575,6 @@
     		</a-rounded>
 		</a-entity>
 
-		@endif
-
-
-		@if ($visible == 'false')
-		<a-animation 
-				begin="menu-block-slide-left"
-				attribute="position"
-        dur="2000"
-        to="0 0 0">
-		</a-animation>
-		<a-animation 
-				begin="menu-block-slide-right"
-				attribute="position"
-        dur="2000"
-        to="{{ $position }}">
-		</a-animation>
 		@endif
 
 </a-entity>

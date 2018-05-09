@@ -63,7 +63,7 @@ $menu_block_nav_hover_color = "#ff0000";
                 @endif
                 material="shader: flat; src: url({{ $content['general-settings'][0]['logo']['logo-image-resized']['#uri']['#value'] }})">
             </a-entity>
-						@else
+						@elseif (isset($content['general-settings'][0]['space-title-appearance']) && $content['general-settings'][0]['space-title-appearance']['#value'] == 'show')
 						<a-entity
 								geometry="primitive: plane; width: 4; height: 0.5"
 								position="0 1.4 0"

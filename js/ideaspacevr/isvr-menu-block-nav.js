@@ -10,7 +10,7 @@ AFRAME.registerComponent('isvr-menu-block-nav', {
 
 				this.el.addEventListener('mouseenter', function(evt) {
 
-						evt.target.setAttribute('mixin', 'menu-block-nav-hover');
+						//evt.target.setAttribute('mixin', 'menu-block-nav-hover');
             /*if (this.getAttribute('data-content-id') == document.querySelector('#photosphere').getAttribute('data-content-id')) {
 
                 self.el.sceneEl.systems['isvr-scene-helper'].showCursor();
@@ -19,7 +19,6 @@ AFRAME.registerComponent('isvr-menu-block-nav', {
         });
 
         this.el.addEventListener('mouseleave', function() {
-console.log('out');
 
             /*if (this.getAttribute('data-content-id') == document.querySelector('#photosphere').getAttribute('data-content-id')) {
 

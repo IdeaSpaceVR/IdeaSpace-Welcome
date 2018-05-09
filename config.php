@@ -49,6 +49,15 @@ return [
           '#required' => false,
         ],
 
+				'space-title-appearance' => [
+          '#label' => 'Space Title',
+          '#description' => 'Show or hide the space title.',
+          '#help' => 'Show or hide the space title.',
+          '#type' => 'options-select',
+          '#options' => ['show' => 'Show Space Title', 'hide' => 'Hide Space Title'],
+          '#required' => true,
+        ],
+
 				'environment' => [
           '#label' => 'Environment',
           '#description' => 'Select an environment.',
