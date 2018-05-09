@@ -2,8 +2,10 @@
 		id="{{ $id }}" 
 		position="{{ $position }}" 
 		visible="{{ $visible }}"
-		animation__slideinleft="property: position; dur: 500; to: 0 0 0.1; easing: easeOutElastic; startEvents:isvr_navigation_click"
-		animation__slideoutright="property: position; dur: 200; from: 0 0 0.1; to: 0 0 0.0001; startEvents:isvr_navigation_click">
+		animation__slideinright="property: position; dur: 300; from: 10 0 0; to: 0 0 0; startEvents:isvr_slideinright"
+		animation__slideoutleft="property: position; dur: 300; from: 0 0 0; to: -10 0 0; startEvents:isvr_slideoutleft"
+		animation__slideoutright="property: position; dur: 300; from: 0 0 0; to: 10 0 0; startEvents:isvr_slideoutright"
+		animation__slideinleft="property: position; dur: 300; from: -10 0 0; to: 0 0 0; startEvents:isvr_slideinleft">
 
 		@if ($count == ($start_counter + 1))
 

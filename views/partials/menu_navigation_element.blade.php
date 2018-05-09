@@ -17,14 +17,14 @@ $pos_y = -1.3;
 		</a-triangle>
 		<a-circle 
 				class="collidable"  
-				isvr-menu-block-nav="#menu-block-0" 
+				isvr-menu-block-nav="slideinleft: #menu-block-0; slideoutright: #menu-block-1" 
 				position="-0.2 0 0" 
 				mixin="menu-block-nav-active" 
 				radius="0.1">
 		</a-circle>
 		<a-circle 
 				class="collidable"  
-				isvr-menu-block-nav="#menu-block-1" 
+				isvr-menu-block-nav="slideoutleft: #menu-block-0; slideinright: #menu-block-1" 
 				position="0.2 0 0" 
 				mixin="menu-block-nav-active" 
 				radius="0.1">

@@ -2,11 +2,25 @@ AFRAME.registerComponent('isvr-menu-block-nav', {
 
 
 		schema: {
-				type: 'selector'
+				slideinleft: {
+						type: 'selector'
+				},
+				slideoutleft: {
+						type: 'selector'
+				},
+				slideinright: {
+						type: 'selector'
+				},
+				slideoutright: {
+						type: 'selector'
+				}
 		},
 
   
     init: function () {
+
+				var data = this.data;
+
 
 				this.el.addEventListener('mouseenter', function(evt) {
 
@@ -27,12 +41,43 @@ AFRAME.registerComponent('isvr-menu-block-nav', {
 
         });
 
+
+				if (data.slideoutleft !== null) {
+				data.slideoutleft.addEventListener('animationcomplete', function(e) {
+						if (e.detail.name == 'animation__slideoutleft') {
+								data.slideoutleft.setAttribute('visible', false);	
+						}
+				});	
+				}
+
+				if (data.slideoutright !== null) {
+				data.slideoutright.addEventListener('animationcomplete', function(e) {
+						if (e.detail.name == 'animation__slideoutright') {
+								data.slideoutright.setAttribute('visible', false);
+						}
+				});
+				}
+
         this.el.addEventListener('click', function() {
 
-console.log('click');
-						this.data.emit('menu-block-slide-left');	
-						//wait for animationend
-						this.data.setAttribute('visible', true);
+						if (data.slideinleft !== null) {
+								data.slideinleft.setAttribute('visible', true);
+								data.slideinleft.emit('isvr_slideinleft');
+						} 
+		
+						if (data.slideoutleft !== null) {
+								data.slideoutleft.emit('isvr_slideoutleft');
+						} 
+
+						if (data.slideinright !== null) {
+								data.slideinright.setAttribute('visible', true);
+								data.slideinright.emit('isvr_slideinright');
+						} 
+
+						if (data.slideoutright !== null) {
+								data.slideoutright.emit('isvr_slideoutright');
+						}	
+
 				});
 	
 		}
