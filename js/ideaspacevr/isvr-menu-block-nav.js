@@ -2,17 +2,8 @@ AFRAME.registerComponent('isvr-menu-block-nav', {
 
 
 		schema: {
-				slideinleft: {
-						type: 'selector'
-				},
-				slideoutleft: {
-						type: 'selector'
-				},
-				slideinright: {
-						type: 'selector'
-				},
-				slideoutright: {
-						type: 'selector'
+				show: { 
+						type: 'string'
 				},
 				inactivecolor: {
 						type: 'string'
@@ -78,23 +69,7 @@ console.log('her 2');
 
 						self.el.setAttribute('color', data.activecolor);
 
-						if (data.slideinleft !== null) {
-								//data.slideinleft.setAttribute('visible', true);
-								data.slideinleft.emit('isvr_slideinleft');
-						} 
-		
-						if (data.slideoutleft !== null) {
-								data.slideoutleft.emit('isvr_slideoutleft');
-						} 
-
-						if (data.slideinright !== null) {
-								data.slideinright.setAttribute('visible', true);
-								data.slideinright.emit('isvr_slideinright');
-						} 
-
-						if (data.slideoutright !== null) {
-								data.slideoutright.emit('isvr_slideoutright');
-						}	
+						document.querySelector('#item-wrapper').emit('show_' + data.show);
 
 				});
 	

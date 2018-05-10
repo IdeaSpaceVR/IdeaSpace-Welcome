@@ -17,14 +17,14 @@ $pos_y = -1.3;
 		</a-triangle>
 		<a-circle 
 				class="collidable nav-circle"  
-				isvr-menu-block-nav="slideinleft: #menu-block-0; slideoutright: #menu-block-1; activecolor: {{ $menu_block_nav_active_color }}; inactivecolor: {{ $menu_block_nav_inactive_color }}" 
+				isvr-menu-block-nav="show: menu_block_0; activecolor: {{ $menu_block_nav_active_color }}; inactivecolor: {{ $menu_block_nav_inactive_color }}" 
 				position="-0.2 0 0" 
 				color="{{ $menu_block_nav_active_color }}" 
 				radius="0.1">
 		</a-circle>
 		<a-circle 
 				class="collidable nav-circle"  
-				isvr-menu-block-nav="slideoutleft: #menu-block-0; slideinright: #menu-block-1; activecolor: {{ $menu_block_nav_active_color }}; inactivecolor: {{ $menu_block_nav_inactive_color }}" 
+				isvr-menu-block-nav="show: menu_block_1; activecolor: {{ $menu_block_nav_active_color }}; inactivecolor: {{ $menu_block_nav_inactive_color }}" 
 				position="0.2 0 0" 
 				color="{{ $menu_block_nav_inactive_color }}" 
 				radius="0.1">

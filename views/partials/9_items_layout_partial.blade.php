@@ -4,12 +4,7 @@ $rotation_y = 10;
 <a-entity 
 		id="{{ $id }}" 
 		position="{{ $position }}" 
-		visible="{{ $visible }}"
-		isvr-position
-		animation="property: position; dur: 300; from: 10 0 0; to: 0 0 0; startEvents:isvr_slideinright"
-    animation__slideoutleft="property: position; dur: 300; from: 0 0 0; to: -10 0 0; startEvents:isvr_slideoutleft"
-    animation__slideoutright="property: position; dur: 300; from: 0 0 0; to: 10 0 0; startEvents:isvr_slideoutright"
-    animation__slideinleft="property: position; dur: 300; from: -10 0 0; to: 0 0 0; startEvents:isvr_slideinleft">
+		visible="{{ $visible }}">
 
 		@if ($count == ($start_counter + 6))
 
