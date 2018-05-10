@@ -1,8 +1,12 @@
+@php
+$rotation_y = 10;
+@endphp
 <a-entity 
 		id="{{ $id }}" 
 		position="{{ $position }}" 
 		visible="{{ $visible }}"
-		animation__slideinright="property: position; dur: 300; from: 10 0 0; to: 0 0 0; startEvents:isvr_slideinright"
+		isvr-position
+		animation="property: position; dur: 300; from: 10 0 0; to: 0 0 0; startEvents:isvr_slideinright"
     animation__slideoutleft="property: position; dur: 300; from: 0 0 0; to: -10 0 0; startEvents:isvr_slideoutleft"
     animation__slideoutright="property: position; dur: 300; from: 0 0 0; to: 10 0 0; startEvents:isvr_slideoutright"
     animation__slideinleft="property: position; dur: 300; from: -10 0 0; to: 0 0 0; startEvents:isvr_slideinleft">
@@ -12,7 +16,7 @@
 		<!-- center, left //-->
 		<a-entity
 				position="-1.15 0 0.09"
-				rotation="0 10 0">
+				rotation="0 {{ $rotation_y }} 0">
 				 <a-rounded
             position="0 0 0.0001"
             width="1.05"
@@ -86,7 +90,7 @@
 		<!-- center, right //-->
 		<a-entity
 				position="1.15 0 0.09"
-				rotation="0 -10 0">
+				rotation="0 -{{ $rotation_y }} 0">
 				 <a-rounded
             position="0 0 0.0001"
             width="1.05"
@@ -197,7 +201,7 @@
 		<!-- 1st top row, left //-->
 		<a-entity
 				position="-1.15 0.65 0.09"
-				rotation="0 10 0">
+				rotation="0 {{ $rotation_y }} 0">
 				<a-rounded
             position="0 0 0.0001"
             width="1.05"
@@ -237,7 +241,7 @@
 		<!-- center, left //-->
 		<a-entity
 				position="-1.15 0 0.09"
-				rotation="0 10 0">
+				rotation="0 {{ $rotation_y }} 0">
 				 <a-rounded
             position="0 0 0.0001"
             width="1.05"
@@ -311,7 +315,7 @@
 		<!-- center, right //-->
 		<a-entity
 				position="1.15 0 0.09"
-				rotation="0 -10 0">
+				rotation="0 -{{ $rotation_y }} 0">
 				 <a-rounded
             position="0 0 0.0001"
             width="1.05"
@@ -422,7 +426,7 @@
 		<!-- 1st top row, left //-->
 		<a-entity
 				position="-1.15 0.65 0.09"
-				rotation="0 10 0">
+				rotation="0 {{ $rotation_y }} 0">
 				<a-rounded
             position="0 0 0.0001"
             width="1.05"
@@ -459,7 +463,7 @@
 		<!-- 1st top row, right //-->
 		<a-entity
 				position="1.15 0.65 0.09"
-				rotation="0 -10 0">
+				rotation="0 -{{ $rotation_y }} 0">
 				<a-rounded
             position="0 0 0.0001"
             width="1.05"
@@ -499,7 +503,7 @@
 		<!-- center, left //-->
 		<a-entity
 				position="-1.15 0 0.09"
-				rotation="0 10 0">
+				rotation="0 {{ $rotation_y }} 0">
 				 <a-rounded
             position="0 0 0.0001"
             width="1.05"
@@ -573,7 +577,7 @@
 		<!-- center, right //-->
 		<a-entity
 				position="1.15 0 0.09"
-				rotation="0 -10 0">
+				rotation="0 -{{ $rotation_y }} 0">
 				 <a-rounded
             position="0 0 0.0001"
             width="1.05"
@@ -684,7 +688,7 @@
 		<!-- 1st top row, left //-->
 		<a-entity
 				position="-1.15 0.65 0.09"
-				rotation="0 10 0">
+				rotation="0 {{ $rotation_y }} 0">
 				<a-rounded
             position="0 0 0.0001"
             width="1.05"
@@ -721,7 +725,7 @@
 		<!-- 1st top row, right //-->
 		<a-entity
 				position="1.15 0.65 0.09"
-				rotation="0 -10 0">
+				rotation="0 -{{ $rotation_y }} 0">
 				<a-rounded
             position="0 0 0.0001"
             width="1.05"
@@ -758,7 +762,7 @@
 		<!-- 1st bottom row, left //-->
 		<a-entity
 				position="-1.15 -0.65 0.09"
-				rotation="0 10 0">
+				rotation="0 {{ $rotation_y }} 0">
 				<a-rounded
             position="0 0 0.0001"
             width="1.05"
@@ -798,7 +802,7 @@
 		<!-- center, left //-->
 		<a-entity
 				position="-1.15 0 0.09"
-				rotation="0 10 0">
+				rotation="0 {{ $rotation_y }} 0">
 				 <a-rounded
             position="0 0 0.0001"
             width="1.05"
@@ -872,7 +876,7 @@
 		<!-- center, right //-->
 		<a-entity
 				position="1.15 0 0.09"
-				rotation="0 -10 0">
+				rotation="0 -{{ $rotation_y }} 0">
 				 <a-rounded
             position="0 0 0.0001"
             width="1.05"
@@ -983,7 +987,7 @@
 		<!-- 1st top row, left //-->
 		<a-entity
 				position="-1.15 0.65 0.09"
-				rotation="0 10 0">
+				rotation="0 {{ $rotation_y }} 0">
 				<a-rounded
             position="0 0 0.0001"
             width="1.05"
@@ -1020,7 +1024,7 @@
 		<!-- 1st top row, right //-->
 		<a-entity
 				position="1.15 0.65 0.09"
-				rotation="0 -10 0">
+				rotation="0 -{{ $rotation_y }} 0">
 				<a-rounded
             position="0 0 0.0001"
             width="1.05"
@@ -1057,7 +1061,7 @@
 		<!-- 1st bottom row, left //-->
 		<a-entity
 				position="-1.15 -0.65 0.09"
-				rotation="0 10 0">
+				rotation="0 {{ $rotation_y }} 0">
 				<a-rounded
             position="0 0 0.0001"
             width="1.05"
@@ -1094,7 +1098,7 @@
 		<!-- 1st bottom row, right //-->
 		<a-entity
 				position="1.15 -0.65 0.09"
-				rotation="0 -10 0">
+				rotation="0 -{{ $rotation_y }} 0">
 				<a-rounded
             position="0 0 0.0001"
             width="1.05"

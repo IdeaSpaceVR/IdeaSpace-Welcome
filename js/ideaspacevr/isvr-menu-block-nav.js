@@ -13,12 +13,19 @@ AFRAME.registerComponent('isvr-menu-block-nav', {
 				},
 				slideoutright: {
 						type: 'selector'
+				},
+				inactivecolor: {
+						type: 'string'
+				},
+				activecolor: {
+						type: 'string'
 				}
 		},
 
   
     init: function () {
 
+				var self = this;
 				var data = this.data;
 
 
@@ -42,8 +49,9 @@ AFRAME.registerComponent('isvr-menu-block-nav', {
         });
 
 
-				if (data.slideoutleft !== null) {
+/*				if (data.slideoutleft !== null) {
 				data.slideoutleft.addEventListener('animationcomplete', function(e) {
+console.log('her 1');
 						if (e.detail.name == 'animation__slideoutleft') {
 								data.slideoutleft.setAttribute('visible', false);	
 						}
@@ -52,16 +60,26 @@ AFRAME.registerComponent('isvr-menu-block-nav', {
 
 				if (data.slideoutright !== null) {
 				data.slideoutright.addEventListener('animationcomplete', function(e) {
+console.log('her 2');
 						if (e.detail.name == 'animation__slideoutright') {
 								data.slideoutright.setAttribute('visible', false);
 						}
 				});
 				}
+*/
+
+				var all = document.querySelectorAll('.nav-circle');
 
         this.el.addEventListener('click', function() {
 
+						for (var i=0; i<all.length; i++) {
+								all[i].setAttribute('color', data.inactivecolor);
+						}
+
+						self.el.setAttribute('color', data.activecolor);
+
 						if (data.slideinleft !== null) {
-								data.slideinleft.setAttribute('visible', true);
+								//data.slideinleft.setAttribute('visible', true);
 								data.slideinleft.emit('isvr_slideinleft');
 						} 
 		

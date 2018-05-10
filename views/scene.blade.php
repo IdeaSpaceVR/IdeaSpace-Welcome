@@ -14,9 +14,6 @@ $menu_block_nav_hover_color = "#ff0000";
 		<a-scene isvr-scene>
 
 				<a-assets>
-    				<a-mixin id="menu-block-nav-inactive" material="color: {{ $menu_block_nav_inactive_color }}"></a-mixin>
-    				<a-mixin id="menu-block-nav-active" material="color: {{ $menu_block_nav_active_color }}"></a-mixin>
-    				<a-mixin id="menu-block-nav-hover" material="color: {{ $menu_block_nav_active_color }}"></a-mixin>
  				</a-assets>
 
 
