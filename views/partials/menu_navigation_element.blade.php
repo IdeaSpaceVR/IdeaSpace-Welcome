@@ -56,21 +56,21 @@ $pos_y = -1.3;
 		</a-triangle>
 		<a-circle 
 				class="collidable"  
-				isvr-menu-block-nav="#menu-block-0" 
+				isvr-menu-block-nav="show: menu_block_0; activecolor: {{ $menu_block_nav_active_color }}; inactivecolor: {{ $menu_block_nav_inactive_color }}" 
 				position="-0.4 0 0" 
 				color="{{ $menu_block_nav_active_color }}" 
 				radius="0.1">
 		</a-circle>
 		<a-circle 
 				class="collidable"  
-				isvr-menu-block-nav="#menu-block-1" 
+				isvr-menu-block-nav="show: menu_block_1; activecolor: {{ $menu_block_nav_active_color }}; inactivecolor: {{ $menu_block_nav_inactive_color }}" 
 				position="0 0 0" 
 				color="{{ $menu_block_nav_inactive_color }}" 
 				radius="0.1">
 		</a-circle>
 		<a-circle 
 				class="collidable"  
-				isvr-menu-block-nav="#menu-block-2" 
+				isvr-menu-block-nav="show: menu_block_2; activecolor: {{ $menu_block_nav_active_color }}; inactivecolor: {{ $menu_block_nav_inactive_color }}" 
 				position="0.4 0 0" 
 				color="{{ $menu_block_nav_inactive_color }}" 
 				radius="0.1">
@@ -102,28 +102,28 @@ $pos_y = -1.3;
 		</a-triangle>
 		<a-circle 
 				class="collidable"  
-				isvr-menu-block-nav="#menu-block-0" 
+				isvr-menu-block-nav="show: menu_block_0; activecolor: {{ $menu_block_nav_active_color }}; inactivecolor: {{ $menu_block_nav_inactive_color }}" 
 				position="-0.6 0 0" 
 				color="{{ $menu_block_nav_active_color }}" 
 				radius="0.1">
 		</a-circle>
 		<a-circle 
 				class="collidable"  
-				isvr-menu-block-nav="#menu-block-1" 
+				isvr-menu-block-nav="show: menu_block_1; activecolor: {{ $menu_block_nav_active_color }}; inactivecolor: {{ $menu_block_nav_inactive_color }}" 
 				position="-0.2 0 0" 
 				color="{{ $menu_block_nav_inactive_color }}" 
 				radius="0.1">
 		</a-circle>
 		<a-circle 
 				class="collidable"  
-				isvr-menu-block-nav="#menu-block-2" 
+				isvr-menu-block-nav="show: menu_block_2; activecolor: {{ $menu_block_nav_active_color }}; inactivecolor: {{ $menu_block_nav_inactive_color }}" 
 				position="0.2 0 0" 
 				color="{{ $menu_block_nav_inactive_color }}" 
 				radius="0.1">
 		</a-circle>
 		<a-circle 
 				class="collidable"  
-				isvr-menu-block-nav="#menu-block-3" 
+				isvr-menu-block-nav="show: menu_block_3; activecolor: {{ $menu_block_nav_active_color }}; inactivecolor: {{ $menu_block_nav_inactive_color }}" 
 				position="0.6 0 0" 
 				color="{{ $menu_block_nav_inactive_color }}" 
 				radius="0.1">

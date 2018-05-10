@@ -102,11 +102,19 @@ $menu_block_nav_hover_color = "#ff0000";
 
 						@elseif (count($content['space-links']) > 14 && count($content['space-links']) <= 18)
 
-								@include('theme::partials.9_items_layout_partial', 
-										['id' => 'menu-block-0', 'start_counter' => 0, 'count' => 9, 'position' => '0 0 0', 'visible' => 'true'])
+								<a-entity
+										animation="property: position; dur: 300; from: 0 0 0; to: -{{ $menu_block_margin }} 0 0; startEvents:show_menu_block_1"
+										animation__show_menu_block_0="property: position; dur: 300; from: -{{ $menu_block_margin }} 0 0; to: 0 0 0; startEvents:show_menu_block_0"
+										position="0 0 0"
+										id="item-wrapper">
 
-								@include('theme::partials.9_items_layout_partial', 
-										['id' => 'menu-block-1', 'start_counter' => 9, 'count' => count($content['space-links']), 'position' => $menu_block_margin . ' 0 0', 'visible' => 'true'])
+										@include('theme::partials.9_items_layout_partial', 
+												['id' => 'menu-block-0', 'start_counter' => 0, 'count' => 9, 'position' => '0 0 0', 'visible' => 'true'])
+
+										@include('theme::partials.9_items_layout_partial', 
+												['id' => 'menu-block-1', 'start_counter' => 9, 'count' => count($content['space-links']), 'position' => $menu_block_margin . ' 0 0', 'visible' => 'true'])
+
+								</a-entity><!-- item-wrapper //-->
 
 								@include('theme::partials.menu_navigation_element', ['number_elements' => 2])
 
@@ -114,14 +122,23 @@ $menu_block_nav_hover_color = "#ff0000";
 
 						@elseif (count($content['space-links']) > 18 && count($content['space-links']) <= 23)
 
-								@include('theme::partials.9_items_layout_partial', 
-										['id' => 'menu-block-0', 'start_counter' => 0, 'count' => 9, 'position' => '0 0 0', 'visible' => 'true'])
+								<a-entity
+										animation="property: position; dur: 300; from: 0 0 0; to: -{{ $menu_block_margin }} 0 0; startEvents:show_menu_block_1"
+										animation__show_menu_block_0="property: position; dur: 300; from: -{{ $menu_block_margin }} 0 0; to: 0 0 0; startEvents:show_menu_block_0"
+										animation__show_menu_block_2="property: position; dur: 300; from: -{{ ($menu_block_margin * 2) }} 0 0; to: 0 0 0; startEvents:show_menu_block_2"
+										position="0 0 0"
+										id="item-wrapper">
 
-								@include('theme::partials.9_items_layout_partial', 
-										['id' => 'menu-block-1', 'start_counter' => 9, 'count' => 18, 'position' => $menu_block_margin . ' 0 0', 'visible' => 'true'])
+										@include('theme::partials.9_items_layout_partial', 
+												['id' => 'menu-block-0', 'start_counter' => 0, 'count' => 9, 'position' => '0 0 0', 'visible' => 'true'])
 
-								@include('theme::partials.5_items_layout_partial', 
-										['id' => 'menu-block-2', 'start_counter' => 18, 'count' => count($content['space-links']), 'position' => ($menu_block_margin * 2) . ' 0 0', 'visible' => 'true'])
+										@include('theme::partials.9_items_layout_partial', 
+												['id' => 'menu-block-1', 'start_counter' => 9, 'count' => 18, 'position' => $menu_block_margin . ' 0 0', 'visible' => 'true'])
+
+										@include('theme::partials.5_items_layout_partial', 
+												['id' => 'menu-block-2', 'start_counter' => 18, 'count' => count($content['space-links']), 'position' => ($menu_block_margin * 2) . ' 0 0', 'visible' => 'true'])
+
+								</a-entity><!-- item-wrapper //-->
 
 								@include('theme::partials.menu_navigation_element', ['number_elements' => 3])
 
@@ -129,14 +146,23 @@ $menu_block_nav_hover_color = "#ff0000";
 
 						@elseif (count($content['space-links']) > 23 && count($content['space-links']) <= 27)
 
-								@include('theme::partials.9_items_layout_partial', 
-										['id' => 'menu-block-0', 'start_counter' => 0, 'count' => 9, 'position' => '0 0 0', 'visible' => 'true'])
+								<a-entity
+										animation="property: position; dur: 300; from: 0 0 0; to: -{{ $menu_block_margin }} 0 0; startEvents:show_menu_block_1"
+										animation__show_menu_block_0="property: position; dur: 300; from: -{{ $menu_block_margin }} 0 0; to: 0 0 0; startEvents:show_menu_block_0"
+										animation__show_menu_block_2="property: position; dur: 300; from: -{{ ($menu_block_margin * 2) }} 0 0; to: 0 0 0; startEvents:show_menu_block_2"
+										position="0 0 0"
+										id="item-wrapper">
 
-								@include('theme::partials.9_items_layout_partial', 
-										['id' => 'menu-block-1', 'start_counter' => 9, 'count' => 18, 'position' => $menu_block_margin . ' 0 0', 'visible' => 'true'])
+										@include('theme::partials.9_items_layout_partial', 
+												['id' => 'menu-block-0', 'start_counter' => 0, 'count' => 9, 'position' => '0 0 0', 'visible' => 'true'])
 
-								@include('theme::partials.9_items_layout_partial', 
-										['id' => 'menu-block-2', 'start_counter' => 18, 'count' => count($content['space-links']), 'position' => ($menu_block_margin * 2) . ' 0 0', 'visible' => 'true'])
+										@include('theme::partials.9_items_layout_partial', 
+												['id' => 'menu-block-1', 'start_counter' => 9, 'count' => 18, 'position' => $menu_block_margin . ' 0 0', 'visible' => 'true'])
+
+										@include('theme::partials.9_items_layout_partial', 
+												['id' => 'menu-block-2', 'start_counter' => 18, 'count' => count($content['space-links']), 'position' => ($menu_block_margin * 2) . ' 0 0', 'visible' => 'true'])
+
+								</a-entity><!-- item-wrapper //-->
 
 								@include('theme::partials.menu_navigation_element', ['number_elements' => 3])
 
@@ -144,17 +170,27 @@ $menu_block_nav_hover_color = "#ff0000";
 
 						@elseif (count($content['space-links']) > 27 && count($content['space-links']) <= 32)
 
-								@include('theme::partials.9_items_layout_partial', 
-										['id' => 'menu-block-0', 'start_counter' => 0, 'count' => 9, 'position' => '0 0 0', 'visible' => 'true'])
+								<a-entity
+										animation="property: position; dur: 300; from: 0 0 0; to: -{{ $menu_block_margin }} 0 0; startEvents:show_menu_block_1"
+										animation__show_menu_block_0="property: position; dur: 300; from: -{{ $menu_block_margin }} 0 0; to: 0 0 0; startEvents:show_menu_block_0"
+										animation__show_menu_block_2="property: position; dur: 300; from: -{{ ($menu_block_margin * 2) }} 0 0; to: 0 0 0; startEvents:show_menu_block_2"
+										animation__show_menu_block_3="property: position; dur: 300; from: -{{ ($menu_block_margin * 3) }} 0 0; to: 0 0 0; startEvents:show_menu_block_3"
+										position="0 0 0"
+										id="item-wrapper">
 
-								@include('theme::partials.9_items_layout_partial', 
-										['id' => 'menu-block-1', 'start_counter' => 9, 'count' => 18, 'position' => $menu_block_margin . ' 0 0', 'visible' => 'true'])
+										@include('theme::partials.9_items_layout_partial', 
+												['id' => 'menu-block-0', 'start_counter' => 0, 'count' => 9, 'position' => '0 0 0', 'visible' => 'true'])
 
-								@include('theme::partials.9_items_layout_partial', 
-										['id' => 'menu-block-2', 'start_counter' => 18, 'count' => 27, 'position' => ($menu_block_margin * 2) . ' 0 0', 'visible' => 'true'])
+										@include('theme::partials.9_items_layout_partial', 
+												['id' => 'menu-block-1', 'start_counter' => 9, 'count' => 18, 'position' => $menu_block_margin . ' 0 0', 'visible' => 'true'])
 
-								@include('theme::partials.5_items_layout_partial', 
-										['id' => 'menu-block-3', 'start_counter' => 27, 'count' => count($content['space-links']), 'position' => ($menu_block_margin * 3) . ' 0 0', 'visible' => 'true'])
+										@include('theme::partials.9_items_layout_partial', 
+												['id' => 'menu-block-2', 'start_counter' => 18, 'count' => 27, 'position' => ($menu_block_margin * 2) . ' 0 0', 'visible' => 'true'])
+
+										@include('theme::partials.5_items_layout_partial', 
+												['id' => 'menu-block-3', 'start_counter' => 27, 'count' => count($content['space-links']), 'position' => ($menu_block_margin * 3) . ' 0 0', 'visible' => 'true'])
+
+								</a-entity><!-- item-wrapper //-->
 
 								@include('theme::partials.menu_navigation_element', ['number_elements' => 4])
 
@@ -162,17 +198,27 @@ $menu_block_nav_hover_color = "#ff0000";
 
 						@elseif (count($content['space-links']) > 32 && count($content['space-links']) <= 36)
 
-								@include('theme::partials.9_items_layout_partial', 
-										['id' => 'menu-block-0', 'start_counter' => 0, 'count' => 9, 'position' => '0 0 0', 'visible' => 'true'])
+								<a-entity
+										animation="property: position; dur: 300; from: 0 0 0; to: -{{ $menu_block_margin }} 0 0; startEvents:show_menu_block_1"
+										animation__show_menu_block_0="property: position; dur: 300; from: -{{ $menu_block_margin }} 0 0; to: 0 0 0; startEvents:show_menu_block_0"
+										animation__show_menu_block_2="property: position; dur: 300; from: -{{ ($menu_block_margin * 2) }} 0 0; to: 0 0 0; startEvents:show_menu_block_2"
+										animation__show_menu_block_3="property: position; dur: 300; from: -{{ ($menu_block_margin * 3) }} 0 0; to: 0 0 0; startEvents:show_menu_block_3"
+										position="0 0 0"
+										id="item-wrapper">
 
-								@include('theme::partials.9_items_layout_partial', 
-										['id' => 'menu-block-1', 'start_counter' => 9, 'count' => 18, 'position' => $menu_block_margin . ' 0 0', 'visible' => 'true'])
+										@include('theme::partials.9_items_layout_partial', 
+												['id' => 'menu-block-0', 'start_counter' => 0, 'count' => 9, 'position' => '0 0 0', 'visible' => 'true'])
 
-								@include('theme::partials.9_items_layout_partial', 
-										['id' => 'menu-block-2', 'start_counter' => 18, 'count' => 27, 'position' => ($menu_block_margin * 2) . ' 0 0', 'visible' => 'true'])
+										@include('theme::partials.9_items_layout_partial', 
+												['id' => 'menu-block-1', 'start_counter' => 9, 'count' => 18, 'position' => $menu_block_margin . ' 0 0', 'visible' => 'true'])
 
-								@include('theme::partials.9_items_layout_partial', 
-										['id' => 'menu-block-3', 'start_counter' => 27, 'count' => count($content['space-links']), 'position' => ($menu_block_margin * 3) . ' 0 0', 'visible' => 'true'])
+										@include('theme::partials.9_items_layout_partial', 
+												['id' => 'menu-block-2', 'start_counter' => 18, 'count' => 27, 'position' => ($menu_block_margin * 2) . ' 0 0', 'visible' => 'true'])
+
+										@include('theme::partials.9_items_layout_partial', 
+												['id' => 'menu-block-3', 'start_counter' => 27, 'count' => count($content['space-links']), 'position' => ($menu_block_margin * 3) . ' 0 0', 'visible' => 'true'])
+
+								</a-entity><!-- item-wrapper //-->
 
 								@include('theme::partials.menu_navigation_element', ['number_elements' => 4])
 
