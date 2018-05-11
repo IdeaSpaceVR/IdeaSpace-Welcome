@@ -6,9 +6,8 @@
 
 @php
 $menu_block_margin = 10;
-$menu_block_nav_inactive_color = "#999999";
-$menu_block_nav_active_color = "#ffcc00";
-$menu_block_nav_hover_color = "#ff0000";
+$menu_block_nav_inactive_color = (isset($content['general-settings'][0]['navigation-inactive-color'])?$content['general-settings'][0]['navigation-inactive-color']['#value']:"#999999");
+$menu_block_nav_active_color = (isset($content['general-settings'][0]['navigation-active-color'])?$content['general-settings'][0]['navigation-active-color']['#value']:"#0080E5");
 @endphp
 
 		<a-scene isvr-scene>
@@ -56,7 +55,7 @@ $menu_block_nav_hover_color = "#ff0000";
                 @endif
                 material="shader: flat; src: url({{ $content['general-settings'][0]['logo']['logo-image-resized']['#uri']['#value'] }})">
             </a-entity>
-						@elseif (isset($content['general-settings'][0]['space-title-appearance']) && $content['general-settings'][0]['space-title-appearance']['#value'] == 'show')
+						@else
 						<a-entity
 								geometry="primitive: plane; width: 4; height: 0.5"
 								position="0 1.4 0"

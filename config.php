@@ -49,13 +49,22 @@ return [
           '#required' => false,
         ],
 
-				'space-title-appearance' => [
-          '#label' => 'Space Title',
-          '#description' => 'Show or hide the space title.',
-          '#help' => 'Show or hide the space title.',
-          '#type' => 'options-select',
-          '#options' => ['show' => 'Show Space Title', 'hide' => 'Hide Space Title'],
-          '#required' => true,
+        'navigation-active-color' => [
+          '#label' => 'Active Navigation Color',
+          '#description' => 'Select a color.',
+          '#help' => 'Select a color.',
+          '#type' => 'color',
+					'#default_value' => '#0080E5',
+          '#required' => false,
+        ],
+
+        'navigation-inactive-color' => [
+          '#label' => 'Inactive Navigation Color',
+          '#description' => 'Select a color.',
+          '#help' => 'Select a color.',
+          '#type' => 'color',
+					'#default_value' => '#999999',
+          '#required' => false,
         ],
 
 				'environment' => [
