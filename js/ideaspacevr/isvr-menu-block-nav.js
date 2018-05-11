@@ -62,20 +62,27 @@ console.log('her 2');
 
         this.el.addEventListener('click', function() {
 
+						var activeEl = null;
+
 						if (self.el.is('active')) {
 								return;
 						}
 
 						for (var i=0; i<all.length; i++) {
+								if (all[i].is('active')) {
+										activeEl = all[i];
+								}
 								all[i].setAttribute('color', data.inactivecolor);
 								all[i].removeState('active');
 						}
 
 						self.el.setAttribute('color', data.activecolor);
-
 						self.el.addState('active');
 
-						document.querySelector('#item-wrapper').emit('show_' + data.show);
+						var next_number = data.show.slice(-1);
+						var current_number = activeEl.getAttribute('isvr-menu-block-nav').show.slice(-1);
+
+						document.querySelector('#item-wrapper').emit('from_' + current_number + '_to_' + next_number);
 
 				});
 	

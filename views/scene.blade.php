@@ -82,8 +82,8 @@ $menu_block_nav_active_color = (isset($content['general-settings'][0]['navigatio
 						@elseif (count($content['space-links']) > 9 && count($content['space-links']) <= 14)
 
 								<a-entity
-										animation="property: position; dur: 300; from: 0 0 0; to: -{{ $menu_block_margin }} 0 0; startEvents:show_menu_block_1"
-										animation__show_menu_block_0="property: position; dur: 300; from: -{{ $menu_block_margin }} 0 0; to: 0 0 0; startEvents:show_menu_block_0"
+										animation__from_0_to_1="property: position; dur: 300; from: 0 0 0; to: -{{ $menu_block_margin }} 0 0; startEvents:from_0_to_1"
+										animation__from_1_to_0="property: position; dur: 300; from: -{{ $menu_block_margin }} 0 0; to: 0 0 0; startEvents:from_1_to_0"
 										position="0 0 0"
 										id="item-wrapper">
 
@@ -93,7 +93,7 @@ $menu_block_nav_active_color = (isset($content['general-settings'][0]['navigatio
 										@include('theme::partials.5_items_layout_partial', 
 												['id' => 'menu-block-1', 'start_counter' => 9, 'count' => count($content['space-links']), 'position' => $menu_block_margin . ' 0 0', 'visible' => 'true'])
 
-								</a-entity><!-- item-wrapper //-->
+								</a-entity><!-- animation-wrapper //-->
 
 								@include('theme::partials.menu_navigation_element', ['number_elements' => 2])
 
@@ -102,8 +102,8 @@ $menu_block_nav_active_color = (isset($content['general-settings'][0]['navigatio
 						@elseif (count($content['space-links']) > 14 && count($content['space-links']) <= 18)
 
 								<a-entity
-										animation="property: position; dur: 300; from: 0 0 0; to: -{{ $menu_block_margin }} 0 0; startEvents:show_menu_block_1"
-										animation__show_menu_block_0="property: position; dur: 300; from: -{{ $menu_block_margin }} 0 0; to: 0 0 0; startEvents:show_menu_block_0"
+										animation__from_0_to_1="property: position; dur: 300; from: 0 0 0; to: -{{ $menu_block_margin }} 0 0; startEvents:from_0_to_1"
+										animation__from_1_to_0="property: position; dur: 300; from: -{{ $menu_block_margin }} 0 0; to: 0 0 0; startEvents:from_1_to_0"
 										position="0 0 0"
 										id="item-wrapper">
 
@@ -113,7 +113,7 @@ $menu_block_nav_active_color = (isset($content['general-settings'][0]['navigatio
 										@include('theme::partials.9_items_layout_partial', 
 												['id' => 'menu-block-1', 'start_counter' => 9, 'count' => count($content['space-links']), 'position' => $menu_block_margin . ' 0 0', 'visible' => 'true'])
 
-								</a-entity><!-- item-wrapper //-->
+								</a-entity><!-- animation-wrapper //-->
 
 								@include('theme::partials.menu_navigation_element', ['number_elements' => 2])
 
@@ -122,9 +122,12 @@ $menu_block_nav_active_color = (isset($content['general-settings'][0]['navigatio
 						@elseif (count($content['space-links']) > 18 && count($content['space-links']) <= 23)
 
 								<a-entity
-										animation="property: position; dur: 300; from: 0 0 0; to: -{{ $menu_block_margin }} 0 0; startEvents:show_menu_block_1"
-										animation__show_menu_block_0="property: position; dur: 300; from: -{{ $menu_block_margin }} 0 0; to: 0 0 0; startEvents:show_menu_block_0"
-										animation__show_menu_block_2="property: position; dur: 300; from: -{{ ($menu_block_margin * 2) }} 0 0; to: 0 0 0; startEvents:show_menu_block_2"
+										animation__from_0_to_1="property: position; dur: 300; from: 0 0 0; to: -{{ $menu_block_margin }} 0 0; startEvents:from_0_to_1"
+										animation__from_1_to_0="property: position; dur: 300; from: -{{ $menu_block_margin }} 0 0; to: 0 0 0; startEvents:from_1_to_0"
+										animation__from_0_to_2="property: position; dur: 300; from: 0 0 0; to: -{{ ($menu_block_margin * 2) }} 0 0; startEvents:from_0_to_2"
+										animation__from_2_to_0="property: position; dur: 300; from: -{{ ($menu_block_margin * 2) }} 0 0; to: 0 0 0; startEvents:from_2_to_0"
+										animation__from_1_to_2="property: position; dur: 300; from: -{{ $menu_block_margin }} 0 0; to: -{{ ($menu_block_margin * 2) }} 0 0; startEvents:from_1_to_2"
+										animation__from_2_to_1="property: position; dur: 300; from: -{{ ($menu_block_margin * 2) }} 0 0; to: -{{ $menu_block_margin }} 0 0; startEvents:from_2_to_1"
 										position="0 0 0"
 										id="item-wrapper">
 
@@ -137,7 +140,7 @@ $menu_block_nav_active_color = (isset($content['general-settings'][0]['navigatio
 										@include('theme::partials.5_items_layout_partial', 
 												['id' => 'menu-block-2', 'start_counter' => 18, 'count' => count($content['space-links']), 'position' => ($menu_block_margin * 2) . ' 0 0', 'visible' => 'true'])
 
-								</a-entity><!-- item-wrapper //-->
+								</a-entity><!-- animation-wrapper //-->
 
 								@include('theme::partials.menu_navigation_element', ['number_elements' => 3])
 
@@ -146,9 +149,12 @@ $menu_block_nav_active_color = (isset($content['general-settings'][0]['navigatio
 						@elseif (count($content['space-links']) > 23 && count($content['space-links']) <= 27)
 
 								<a-entity
-										animation="property: position; dur: 300; from: 0 0 0; to: -{{ $menu_block_margin }} 0 0; startEvents:show_menu_block_1"
-										animation__show_menu_block_0="property: position; dur: 300; from: -{{ $menu_block_margin }} 0 0; to: 0 0 0; startEvents:show_menu_block_0"
-										animation__show_menu_block_2="property: position; dur: 300; from: -{{ ($menu_block_margin * 2) }} 0 0; to: 0 0 0; startEvents:show_menu_block_2"
+										animation__from_0_to_1="property: position; dur: 300; from: 0 0 0; to: -{{ $menu_block_margin }} 0 0; startEvents:from_0_to_1"
+										animation__from_1_to_0="property: position; dur: 300; from: -{{ $menu_block_margin }} 0 0; to: 0 0 0; startEvents:from_1_to_0"
+										animation__from_0_to_2="property: position; dur: 300; from: 0 0 0; to: -{{ ($menu_block_margin * 2) }} 0 0; startEvents:from_0_to_2"
+										animation__from_2_to_0="property: position; dur: 300; from: -{{ ($menu_block_margin * 2) }} 0 0; to: 0 0 0; startEvents:from_2_to_0"
+										animation__from_1_to_2="property: position; dur: 300; from: -{{ $menu_block_margin }} 0 0; to: -{{ ($menu_block_margin * 2) }} 0 0; startEvents:from_1_to_2"
+										animation__from_2_to_1="property: position; dur: 300; from: -{{ ($menu_block_margin * 2) }} 0 0; to: -{{ $menu_block_margin }} 0 0; startEvents:from_2_to_1"
 										position="0 0 0"
 										id="item-wrapper">
 
@@ -161,7 +167,7 @@ $menu_block_nav_active_color = (isset($content['general-settings'][0]['navigatio
 										@include('theme::partials.9_items_layout_partial', 
 												['id' => 'menu-block-2', 'start_counter' => 18, 'count' => count($content['space-links']), 'position' => ($menu_block_margin * 2) . ' 0 0', 'visible' => 'true'])
 
-								</a-entity><!-- item-wrapper //-->
+								</a-entity><!-- animation-wrapper //-->
 
 								@include('theme::partials.menu_navigation_element', ['number_elements' => 3])
 
@@ -170,10 +176,18 @@ $menu_block_nav_active_color = (isset($content['general-settings'][0]['navigatio
 						@elseif (count($content['space-links']) > 27 && count($content['space-links']) <= 32)
 
 								<a-entity
-										animation="property: position; dur: 300; from: 0 0 0; to: -{{ $menu_block_margin }} 0 0; startEvents:show_menu_block_1"
-										animation__show_menu_block_0="property: position; dur: 300; from: -{{ $menu_block_margin }} 0 0; to: 0 0 0; startEvents:show_menu_block_0"
-										animation__show_menu_block_2="property: position; dur: 300; from: -{{ ($menu_block_margin * 2) }} 0 0; to: 0 0 0; startEvents:show_menu_block_2"
-										animation__show_menu_block_3="property: position; dur: 300; from: -{{ ($menu_block_margin * 3) }} 0 0; to: 0 0 0; startEvents:show_menu_block_3"
+										animation__from_0_to_1="property: position; dur: 300; from: 0 0 0; to: -{{ $menu_block_margin }} 0 0; startEvents:from_0_to_1"
+										animation__from_1_to_0="property: position; dur: 300; from: -{{ $menu_block_margin }} 0 0; to: 0 0 0; startEvents:from_1_to_0"
+										animation__from_0_to_2="property: position; dur: 300; from: 0 0 0; to: -{{ ($menu_block_margin * 2) }} 0 0; startEvents:from_0_to_2"
+										animation__from_2_to_0="property: position; dur: 300; from: -{{ ($menu_block_margin * 2) }} 0 0; to: 0 0 0; startEvents:from_2_to_0"
+										animation__from_0_to_3="property: position; dur: 300; from: 0 0 0; to: -{{ ($menu_block_margin * 3) }} 0 0; startEvents:from_0_to_3"
+										animation__from_3_to_0="property: position; dur: 300; from: -{{ ($menu_block_margin * 3) }} 0 0; to: 0 0 0; startEvents:from_3_to_0"
+										animation__from_1_to_2="property: position; dur: 300; from: -{{ $menu_block_margin }} 0 0; to: -{{ ($menu_block_margin * 2) }} 0 0; startEvents:from_1_to_2"
+										animation__from_2_to_1="property: position; dur: 300; from: -{{ ($menu_block_margin * 2) }} 0 0; to: -{{ $menu_block_margin }} 0 0; startEvents:from_2_to_1"
+										animation__from_1_to_3="property: position; dur: 300; from: -{{ $menu_block_margin }} 0 0; to: -{{ ($menu_block_margin * 3) }} 0 0; startEvents:from_1_to_3"
+										animation__from_3_to_1="property: position; dur: 300; from: -{{ ($menu_block_margin * 3) }} 0 0; to: -{{ $menu_block_margin }} 0 0; startEvents:from_3_to_1"
+										animation__from_2_to_3="property: position; dur: 300; from: -{{ ($menu_block_margin * 2) }} 0 0; to: -{{ ($menu_block_margin * 3) }} 0 0; startEvents:from_2_to_3"
+										animation__from_3_to_2="property: position; dur: 300; from: -{{ ($menu_block_margin * 3) }} 0 0; to: -{{ ($menu_block_margin * 2) }} 0 0; startEvents:from_3_to_2"
 										position="0 0 0"
 										id="item-wrapper">
 
@@ -189,7 +203,7 @@ $menu_block_nav_active_color = (isset($content['general-settings'][0]['navigatio
 										@include('theme::partials.5_items_layout_partial', 
 												['id' => 'menu-block-3', 'start_counter' => 27, 'count' => count($content['space-links']), 'position' => ($menu_block_margin * 3) . ' 0 0', 'visible' => 'true'])
 
-								</a-entity><!-- item-wrapper //-->
+								</a-entity><!-- animation-wrapper //-->
 
 								@include('theme::partials.menu_navigation_element', ['number_elements' => 4])
 
@@ -198,10 +212,18 @@ $menu_block_nav_active_color = (isset($content['general-settings'][0]['navigatio
 						@elseif (count($content['space-links']) > 32 && count($content['space-links']) <= 36)
 
 								<a-entity
-										animation="property: position; dur: 300; from: 0 0 0; to: -{{ $menu_block_margin }} 0 0; startEvents:show_menu_block_1"
-										animation__show_menu_block_0="property: position; dur: 300; from: -{{ $menu_block_margin }} 0 0; to: 0 0 0; startEvents:show_menu_block_0"
-										animation__show_menu_block_2="property: position; dur: 300; from: -{{ ($menu_block_margin * 2) }} 0 0; to: 0 0 0; startEvents:show_menu_block_2"
-										animation__show_menu_block_3="property: position; dur: 300; from: -{{ ($menu_block_margin * 3) }} 0 0; to: 0 0 0; startEvents:show_menu_block_3"
+										animation__from_0_to_1="property: position; dur: 300; from: 0 0 0; to: -{{ $menu_block_margin }} 0 0; startEvents:from_0_to_1"
+										animation__from_1_to_0="property: position; dur: 300; from: -{{ $menu_block_margin }} 0 0; to: 0 0 0; startEvents:from_1_to_0"
+										animation__from_0_to_2="property: position; dur: 300; from: 0 0 0; to: -{{ ($menu_block_margin * 2) }} 0 0; startEvents:from_0_to_2"
+										animation__from_2_to_0="property: position; dur: 300; from: -{{ ($menu_block_margin * 2) }} 0 0; to: 0 0 0; startEvents:from_2_to_0"
+										animation__from_0_to_3="property: position; dur: 300; from: 0 0 0; to: -{{ ($menu_block_margin * 3) }} 0 0; startEvents:from_0_to_3"
+										animation__from_3_to_0="property: position; dur: 300; from: -{{ ($menu_block_margin * 3) }} 0 0; to: 0 0 0; startEvents:from_3_to_0"
+										animation__from_1_to_2="property: position; dur: 300; from: -{{ $menu_block_margin }} 0 0; to: -{{ ($menu_block_margin * 2) }} 0 0; startEvents:from_1_to_2"
+										animation__from_2_to_1="property: position; dur: 300; from: -{{ ($menu_block_margin * 2) }} 0 0; to: -{{ $menu_block_margin }} 0 0; startEvents:from_2_to_1"
+										animation__from_1_to_3="property: position; dur: 300; from: -{{ $menu_block_margin }} 0 0; to: -{{ ($menu_block_margin * 3) }} 0 0; startEvents:from_1_to_3"
+										animation__from_3_to_1="property: position; dur: 300; from: -{{ ($menu_block_margin * 3) }} 0 0; to: -{{ $menu_block_margin }} 0 0; startEvents:from_3_to_1"
+										animation__from_2_to_3="property: position; dur: 300; from: -{{ ($menu_block_margin * 2) }} 0 0; to: -{{ ($menu_block_margin * 3) }} 0 0; startEvents:from_2_to_3"
+										animation__from_3_to_2="property: position; dur: 300; from: -{{ ($menu_block_margin * 3) }} 0 0; to: -{{ ($menu_block_margin * 2) }} 0 0; startEvents:from_3_to_2"
 										position="0 0 0"
 										id="item-wrapper">
 
@@ -217,7 +239,7 @@ $menu_block_nav_active_color = (isset($content['general-settings'][0]['navigatio
 										@include('theme::partials.9_items_layout_partial', 
 												['id' => 'menu-block-3', 'start_counter' => 27, 'count' => count($content['space-links']), 'position' => ($menu_block_margin * 3) . ' 0 0', 'visible' => 'true'])
 
-								</a-entity><!-- item-wrapper //-->
+								</a-entity><!-- animation-wrapper //-->
 
 								@include('theme::partials.menu_navigation_element', ['number_elements' => 4])
 
