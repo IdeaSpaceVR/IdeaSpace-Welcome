@@ -40,17 +40,23 @@ AFRAME.registerComponent('isvr-menu-block-nav-back', {
 								return;
 						}
 
+						var activeEl = null;
+
             for (var i=(all.length - 1); i>=0; i--) {
 								if (all[i].is('active')) {
 										all[i].removeState('active');
 										all[i].setAttribute('color', data.inactivecolor);
+										activeEl = all[i];
 										j = i;
 										j--;
 								}
 						}
 
 						while (j >= 0) {
-								document.querySelector('#item-wrapper').emit('show_menu_block_' + j);
+								var current_number = activeEl.getAttribute('isvr-menu-block-nav').show.slice(-1);
+                var next_number = parseInt(current_number) - 1;
+                document.querySelector('#item-wrapper').emit('from_' + current_number + '_to_' + next_number);
+
 								all[j].setAttribute('color', data.activecolor);
 								all[j].addState('active');
 								return;
