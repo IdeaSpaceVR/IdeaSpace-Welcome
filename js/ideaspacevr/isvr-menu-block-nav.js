@@ -20,23 +20,22 @@ AFRAME.registerComponent('isvr-menu-block-nav', {
 				var data = this.data;
 
 
+				/* initial state */
+				if (this.el.getAttribute('color') == data.activecolor) {
+						this.el.addState('active');
+				} 
+
+
 				this.el.addEventListener('mouseenter', function(evt) {
 
-						//evt.target.setAttribute('mixin', 'menu-block-nav-hover');
-            /*if (this.getAttribute('data-content-id') == document.querySelector('#photosphere').getAttribute('data-content-id')) {
-
-                self.el.sceneEl.systems['isvr-scene-helper'].showCursor();
-            }*/
-
+						self.el.setAttribute('color', data.activecolor);
         });
 
         this.el.addEventListener('mouseleave', function() {
 
-            /*if (this.getAttribute('data-content-id') == document.querySelector('#photosphere').getAttribute('data-content-id')) {
-
-                self.el.sceneEl.systems['isvr-scene-helper'].hideCursor();
-            }*/
-
+						if (!self.el.is('active')) {
+								self.el.setAttribute('color', data.inactivecolor);
+						}
         });
 
 
@@ -63,11 +62,18 @@ console.log('her 2');
 
         this.el.addEventListener('click', function() {
 
+						if (self.el.is('active')) {
+								return;
+						}
+
 						for (var i=0; i<all.length; i++) {
 								all[i].setAttribute('color', data.inactivecolor);
+								all[i].removeState('active');
 						}
 
 						self.el.setAttribute('color', data.activecolor);
+
+						self.el.addState('active');
 
 						document.querySelector('#item-wrapper').emit('show_' + data.show);
 

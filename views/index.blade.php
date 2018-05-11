@@ -32,6 +32,8 @@
     <script src="{{ url($theme_dir . '/js/aframe-animation/aframe-animation-component.min.js') }}"></script>
     <script src="{{ url($theme_dir . '/js/ideaspacevr/isvr-scene.js') }}"></script>
     <script src="{{ url($theme_dir . '/js/ideaspacevr/isvr-menu-block-nav.js') }}"></script>
+    <script src="{{ url($theme_dir . '/js/ideaspacevr/isvr-menu-block-nav-back.js') }}"></script>
+    <script src="{{ url($theme_dir . '/js/ideaspacevr/isvr-menu-block-nav-fwd.js') }}"></script>
 </head>
 <body>
 

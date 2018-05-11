@@ -1,4 +1,4 @@
-AFRAME.registerComponent('isvr-menu-block-nav-back', {
+AFRAME.registerComponent('isvr-menu-block-nav-fwd', {
 
 
 		schema: {
@@ -20,7 +20,7 @@ AFRAME.registerComponent('isvr-menu-block-nav-back', {
 
 				this.el.addEventListener('mouseenter', function(evt) {
 
-						if (!all[0].is('active')) {
+						if (!all[all.length - 1].is('active')) {
 								self.el.setAttribute('color', data.activecolor);
 						}
         });
@@ -36,20 +36,20 @@ AFRAME.registerComponent('isvr-menu-block-nav-back', {
 
         this.el.addEventListener('click', function() {
 
-						if (all[0].is('active')) {
+						if (all[all.length - 1].is('active')) {
 								return;
 						}
 
-            for (var i=(all.length - 1); i>=0; i--) {
+            for (var i=0; i<all.length; i++) {
 								if (all[i].is('active')) {
 										all[i].removeState('active');
 										all[i].setAttribute('color', data.inactivecolor);
 										j = i;
-										j--;
+										j++;
 								}
 						}
 
-						while (j >= 0) {
+						while (j < all.length) {
 								document.querySelector('#item-wrapper').emit('show_menu_block_' + j);
 								all[j].setAttribute('color', data.activecolor);
 								all[j].addState('active');
