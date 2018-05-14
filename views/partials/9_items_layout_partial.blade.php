@@ -39,10 +39,8 @@ $position_z = 0; /* 0.09 */
             <a-entity
                 class="collidable"
                 material="opacity: 0"
-                geometry="primitive: plane; width: 1; height: 0.5"
-                position="0 0 0.0003"
-                width="1.05"
-                height="0.55">
+                geometry="primitive: plane; width: 1.05; height: 0.55"
+                position="0 0 0.0003">
             </a-entity>
         </a-rounded>
 		</a-entity>
@@ -76,10 +74,8 @@ $position_z = 0; /* 0.09 */
             <a-entity
                 class="collidable"
                 material="opacity: 0"
-                geometry="primitive: plane; width: 1; height: 0.5"
-                position="0 0 0.0003"
-                width="1.05"
-                height="0.55">
+                geometry="primitive: plane; width: 1.05; height: 0.55"
+                position="0 0 0.0003">
             </a-entity>
         </a-rounded>
 		</a-entity>
@@ -113,10 +109,8 @@ $position_z = 0; /* 0.09 */
             <a-entity
                 class="collidable"
                 material="opacity: 0"
-                geometry="primitive: plane; width: 1; height: 0.5"
-                position="0 0 0.0003"
-                width="1.05"
-                height="0.55">
+                geometry="primitive: plane; width: 1.05; height: 0.55"
+                position="0 0 0.0003">
             </a-entity>
         </a-rounded>
 		</a-entity>
@@ -150,10 +144,8 @@ $position_z = 0; /* 0.09 */
             <a-entity
                 class="collidable"
                 material="opacity: 0"
-                geometry="primitive: plane; width: 1; height: 0.5"
-                position="0 0 0.0003"
-                width="1.05"
-                height="0.55">
+                geometry="primitive: plane; width: 1.05; height: 0.55"
+                position="0 0 0.0003">
             </a-entity>
         </a-rounded>
 		</a-entity>
@@ -187,10 +179,8 @@ $position_z = 0; /* 0.09 */
             <a-entity
                 class="collidable"
                 material="opacity: 0"
-                geometry="primitive: plane; width: 1; height: 0.5"
-                position="0 0 0.0003"
-                width="1.05"
-                height="0.55">
+                geometry="primitive: plane; width: 1.05; height: 0.55"
+                position="0 0 0.0003">
             </a-entity>
         </a-rounded>
 		</a-entity>
@@ -224,10 +214,8 @@ $position_z = 0; /* 0.09 */
             <a-entity
                 class="collidable"
                 material="opacity: 0"
-                geometry="primitive: plane; width: 1; height: 0.5"
-                position="0 0 0.0003"
-                width="1.05"
-                height="0.55">
+                geometry="primitive: plane; width: 1.05; height: 0.55"
+                position="0 0 0.0003">
             </a-entity>
         </a-rounded>
 		</a-entity>
@@ -264,10 +252,8 @@ $position_z = 0; /* 0.09 */
             <a-entity
                 class="collidable"
                 material="opacity: 0"
-                geometry="primitive: plane; width: 1; height: 0.5"
-                position="0 0 0.0003"
-                width="1.05"
-                height="0.55">
+                geometry="primitive: plane; width: 1.05; height: 0.55"
+                position="0 0 0.0003">
             </a-entity>
         </a-rounded>
 		</a-entity>
@@ -301,10 +287,8 @@ $position_z = 0; /* 0.09 */
             <a-entity
                 class="collidable"
                 material="opacity: 0"
-                geometry="primitive: plane; width: 1; height: 0.5"
-                position="0 0 0.0003"
-                width="1.05"
-                height="0.55">
+                geometry="primitive: plane; width: 1.05; height: 0.55"
+                position="0 0 0.0003">
             </a-entity>
         </a-rounded>
 		</a-entity>
@@ -338,10 +322,8 @@ $position_z = 0; /* 0.09 */
             <a-entity
                 class="collidable"
                 material="opacity: 0"
-                geometry="primitive: plane; width: 1; height: 0.5"
-                position="0 0 0.0003"
-                width="1.05"
-                height="0.55">
+                geometry="primitive: plane; width: 1.05; height: 0.55"
+                position="0 0 0.0003">
             </a-entity>
         </a-rounded>
 		</a-entity>
@@ -375,10 +357,8 @@ $position_z = 0; /* 0.09 */
             <a-entity
                 class="collidable"
                 material="opacity: 0"
-                geometry="primitive: plane; width: 1; height: 0.5"
-                position="0 0 0.0003"
-                width="1.05"
-                height="0.55">
+                geometry="primitive: plane; width: 1.05; height: 0.55"
+                position="0 0 0.0003">
             </a-entity>
         </a-rounded>
 		</a-entity>
@@ -412,10 +392,8 @@ $position_z = 0; /* 0.09 */
             <a-entity
                 class="collidable"
                 material="opacity: 0"
-                geometry="primitive: plane; width: 1; height: 0.5"
-                position="0 0 0.0003"
-                width="1.05"
-                height="0.55">
+                geometry="primitive: plane; width: 1.05; height: 0.55"
+                position="0 0 0.0003">
             </a-entity>
         </a-rounded>
 		</a-entity>
@@ -449,10 +427,8 @@ $position_z = 0; /* 0.09 */
             <a-entity
                 class="collidable"
                 material="opacity: 0"
-                geometry="primitive: plane; width: 1; height: 0.5"
-                position="0 0 0.0003"
-                width="1.05"
-                height="0.55">
+                geometry="primitive: plane; width: 1.05; height: 0.55"
+                position="0 0 0.0003">
             </a-entity>
         </a-rounded>
 		</a-entity>
@@ -486,10 +462,8 @@ $position_z = 0; /* 0.09 */
             <a-entity
                 class="collidable"
                 material="opacity: 0"
-                geometry="primitive: plane; width: 1; height: 0.5"
-                position="0 0 0.0003"
-                width="1.05"
-                height="0.55">
+                geometry="primitive: plane; width: 1.05; height: 0.55"
+                position="0 0 0.0003">
             </a-entity>
         </a-rounded>
 		</a-entity>
@@ -526,10 +500,8 @@ $position_z = 0; /* 0.09 */
             <a-entity
                 class="collidable"
                 material="opacity: 0"
-                geometry="primitive: plane; width: 1; height: 0.5"
-                position="0 0 0.0003"
-                width="1.05"
-                height="0.55">
+                geometry="primitive: plane; width: 1.05; height: 0.55"
+                position="0 0 0.0003">
             </a-entity>
         </a-rounded>
 		</a-entity>
@@ -563,10 +535,8 @@ $position_z = 0; /* 0.09 */
             <a-entity
                 class="collidable"
                 material="opacity: 0"
-                geometry="primitive: plane; width: 1; height: 0.5"
-                position="0 0 0.0003"
-                width="1.05"
-                height="0.55">
+                geometry="primitive: plane; width: 1.05; height: 0.55"
+                position="0 0 0.0003">
             </a-entity>
         </a-rounded>
 		</a-entity>
@@ -600,10 +570,8 @@ $position_z = 0; /* 0.09 */
             <a-entity
                 class="collidable"
                 material="opacity: 0"
-                geometry="primitive: plane; width: 1; height: 0.5"
-                position="0 0 0.0003"
-                width="1.05"
-                height="0.55">
+                geometry="primitive: plane; width: 1.05; height: 0.55"
+                position="0 0 0.0003">
             </a-entity>
         </a-rounded>
 		</a-entity>
@@ -637,10 +605,8 @@ $position_z = 0; /* 0.09 */
             <a-entity
                 class="collidable"
                 material="opacity: 0"
-                geometry="primitive: plane; width: 1; height: 0.5"
-                position="0 0 0.0003"
-                width="1.05"
-                height="0.55">
+                geometry="primitive: plane; width: 1.05; height: 0.55"
+                position="0 0 0.0003">
             </a-entity>
         </a-rounded>
 		</a-entity>
@@ -674,10 +640,8 @@ $position_z = 0; /* 0.09 */
             <a-entity
                 class="collidable"
                 material="opacity: 0"
-                geometry="primitive: plane; width: 1; height: 0.5"
-                position="0 0 0.0003"
-                width="1.05"
-                height="0.55">
+                geometry="primitive: plane; width: 1.05; height: 0.55"
+                position="0 0 0.0003">
             </a-entity>
         </a-rounded>
 		</a-entity>
@@ -711,10 +675,8 @@ $position_z = 0; /* 0.09 */
             <a-entity
                 class="collidable"
                 material="opacity: 0"
-                geometry="primitive: plane; width: 1; height: 0.5"
-                position="0 0 0.0003"
-                width="1.05"
-                height="0.55">
+                geometry="primitive: plane; width: 1.05; height: 0.55"
+                position="0 0 0.0003">
             </a-entity>
         </a-rounded>
 		</a-entity>
@@ -748,10 +710,8 @@ $position_z = 0; /* 0.09 */
             <a-entity
                 class="collidable"
                 material="opacity: 0"
-                geometry="primitive: plane; width: 1; height: 0.5"
-                position="0 0 0.0003"
-                width="1.05"
-                height="0.55">
+                geometry="primitive: plane; width: 1.05; height: 0.55"
+                position="0 0 0.0003">
             </a-entity>
         </a-rounded>
 		</a-entity>
@@ -785,10 +745,8 @@ $position_z = 0; /* 0.09 */
             <a-entity
                 class="collidable"
                 material="opacity: 0"
-                geometry="primitive: plane; width: 1; height: 0.5"
-                position="0 0 0.0003"
-                width="1.05"
-                height="0.55">
+                geometry="primitive: plane; width: 1.05; height: 0.55"
+                position="0 0 0.0003">
             </a-entity>
         </a-rounded>
 		</a-entity>
@@ -825,10 +783,8 @@ $position_z = 0; /* 0.09 */
             <a-entity
                 class="collidable"
                 material="opacity: 0"
-                geometry="primitive: plane; width: 1; height: 0.5"
-                position="0 0 0.0003"
-                width="1.05"
-                height="0.55">
+                geometry="primitive: plane; width: 1.05; height: 0.55"
+                position="0 0 0.0003">
             </a-entity>
         </a-rounded>
 		</a-entity>
@@ -862,10 +818,8 @@ $position_z = 0; /* 0.09 */
             <a-entity
                 class="collidable"
                 material="opacity: 0"
-                geometry="primitive: plane; width: 1; height: 0.5"
-                position="0 0 0.0003"
-                width="1.05"
-                height="0.55">
+                geometry="primitive: plane; width: 1.05; height: 0.55"
+                position="0 0 0.0003">
             </a-entity>
         </a-rounded>
 		</a-entity>
@@ -899,10 +853,8 @@ $position_z = 0; /* 0.09 */
             <a-entity
                 class="collidable"
                 material="opacity: 0"
-                geometry="primitive: plane; width: 1; height: 0.5"
-                position="0 0 0.0003"
-                width="1.05"
-                height="0.55">
+                geometry="primitive: plane; width: 1.05; height: 0.55"
+                position="0 0 0.0003">
             </a-entity>
         </a-rounded>
 		</a-entity>
@@ -936,10 +888,8 @@ $position_z = 0; /* 0.09 */
             <a-entity
                 class="collidable"
                 material="opacity: 0"
-                geometry="primitive: plane; width: 1; height: 0.5"
-                position="0 0 0.0003"
-                width="1.05"
-                height="0.55">
+                geometry="primitive: plane; width: 1.05; height: 0.55"
+                position="0 0 0.0003">
             </a-entity>
         </a-rounded>
 		</a-entity>
@@ -973,10 +923,8 @@ $position_z = 0; /* 0.09 */
             <a-entity
                 class="collidable"
                 material="opacity: 0"
-                geometry="primitive: plane; width: 1; height: 0.5"
-                position="0 0 0.0003"
-                width="1.05"
-                height="0.55">
+                geometry="primitive: plane; width: 1.05; height: 0.55"
+                position="0 0 0.0003">
             </a-entity>
         </a-rounded>
 		</a-entity>
@@ -1010,10 +958,8 @@ $position_z = 0; /* 0.09 */
             <a-entity
                 class="collidable"
                 material="opacity: 0"
-                geometry="primitive: plane; width: 1; height: 0.5"
-                position="0 0 0.0003"
-                width="1.05"
-                height="0.55">
+                geometry="primitive: plane; width: 1.05; height: 0.55"
+                position="0 0 0.0003">
             </a-entity>
         </a-rounded>
 		</a-entity>
@@ -1047,10 +993,8 @@ $position_z = 0; /* 0.09 */
             <a-entity
                 class="collidable"
                 material="opacity: 0"
-                geometry="primitive: plane; width: 1; height: 0.5"
-                position="0 0 0.0003"
-                width="1.05"
-                height="0.55">
+                geometry="primitive: plane; width: 1.05; height: 0.55"
+                position="0 0 0.0003">
             </a-entity>
         </a-rounded>
 		</a-entity>
@@ -1084,10 +1028,8 @@ $position_z = 0; /* 0.09 */
             <a-entity
                 class="collidable"
                 material="opacity: 0"
-                geometry="primitive: plane; width: 1; height: 0.5"
-                position="0 0 0.0003"
-                width="1.05"
-                height="0.55">
+                geometry="primitive: plane; width: 1.05; height: 0.55"
+                position="0 0 0.0003">
             </a-entity>
         </a-rounded>
 		</a-entity>
@@ -1121,10 +1063,8 @@ $position_z = 0; /* 0.09 */
             <a-entity
                 class="collidable"
                 material="opacity: 0"
-                geometry="primitive: plane; width: 1; height: 0.5"
-                position="0 0 0.0003"
-                width="1.05"
-                height="0.55">
+                geometry="primitive: plane; width: 1.05; height: 0.55"
+                position="0 0 0.0003">
             </a-entity>
         </a-rounded>
 		</a-entity>
