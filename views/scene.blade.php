@@ -5,7 +5,7 @@
 @section('scene')
 
 @php
-$menu_block_margin = 7;
+$menu_block_margin = 4;
 $menu_animation_duration = 500;
 $menu_block_nav_inactive_color = (isset($content['general-settings'][0]['navigation-inactive-color'])?$content['general-settings'][0]['navigation-inactive-color']['#value']:"#999999");
 $menu_block_nav_active_color = (isset($content['general-settings'][0]['navigation-active-color'])?$content['general-settings'][0]['navigation-active-color']['#value']:"#0080E5");
@@ -36,7 +36,7 @@ $menu_block_nav_active_color = (isset($content['general-settings'][0]['navigatio
 
 
 				@if (isset($content['space-links']))
-				<a-entity position="0 1.6 -2.2">	
+				<a-entity id="menu-wrapper" position="0 1.6 -2.3">	
 
 
 						@if (isset($content['general-settings'][0]['logo']))

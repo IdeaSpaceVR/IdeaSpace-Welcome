@@ -1,5 +1,6 @@
 @php
-$rotation_y = 10;
+$rotation_y = 0; /* 10 */
+$position_z = 0; /* 0.09 */
 @endphp
 <a-entity 
 		id="{{ $id }}" 
@@ -87,7 +88,7 @@ $rotation_y = 10;
 		</a-entity>
 		<!-- center, left //-->
 		<a-entity
-				position="-1.15 0 0.09"
+				position="-1.15 0 {{ $position_z }}"
 				rotation="0 {{ $rotation_y }} 0">
 				<a-rounded 
 						position="0 0 0.0001" 
@@ -127,7 +128,7 @@ $rotation_y = 10;
 
 		<!-- center, left //-->
 		<a-entity
-				position="-1.15 0 0.09"
+				position="-1.15 0 {{ $position_z }}"
 				rotation="0 {{ $rotation_y }} 0">
 				<a-rounded 
 						position="0 0 0.0001" 
@@ -201,7 +202,7 @@ $rotation_y = 10;
 		</a-entity>
 		<!-- center, right //-->
 		<a-entity
-				position="1.15 0 0.09"
+				position="1.15 0 {{ $position_z }}"
 				rotation="0 -{{ $rotation_y }} 0">
 				<a-rounded 
 						position="0 0 0.0001" 
@@ -241,7 +242,7 @@ $rotation_y = 10;
 
 		<!-- center, left //-->
 		<a-entity
-				position="-1.15 0 0.09"
+				position="-1.15 0 {{ $position_z }}"
 				rotation="0 {{ $rotation_y }} 0">
 				<a-rounded 
 						position="0 0 0.0001" 
@@ -315,7 +316,7 @@ $rotation_y = 10;
 		</a-entity>
 		<!-- center, right //-->
 		<a-entity
-				position="1.15 0 0.09"
+				position="1.15 0 {{ $position_z }}"
 				rotation="0 -{{ $rotation_y }} 0">
 				<a-rounded 
 						position="0 0 0.0001" 
@@ -392,7 +393,7 @@ $rotation_y = 10;
 
 		<!-- center, left //-->
 		<a-entity
-				position="-1.15 0 0.09"
+				position="-1.15 0 {{ $position_z }}"
 				rotation="0 {{ $rotation_y }} 0">
 				<a-rounded 
 						position="0 0 0.0001" 
@@ -466,7 +467,7 @@ $rotation_y = 10;
 		</a-entity>
 		<!-- center, right //-->
 		<a-entity
-				position="1.15 0 0.09"
+				position="1.15 0 {{ $position_z }}"
 				rotation="0 -{{ $rotation_y }} 0">
 				<a-rounded 
 						position="0 0 0.0001" 

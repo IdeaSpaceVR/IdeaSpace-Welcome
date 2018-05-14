@@ -23,6 +23,13 @@ AFRAME.registerComponent('isvr-scene', {
 
 						if (AFRAME.utils.device.checkHeadsetConnected()) {
                 document.querySelector('#camera-wrapper').setAttribute('position', {x: 0, y: 0, z: 0});
+								/* more space to menu in VR mode (more comfortable) */
+								if (document.querySelector('#menu-wrapper') !== null) {
+                		document.querySelector('#menu-wrapper').setAttribute('position', {
+												x: document.querySelector('#menu-wrapper').getAttribute('position').x, 
+												y: document.querySelector('#menu-wrapper').getAttribute('position').y, z: (document.querySelector('#menu-wrapper').getAttribute('position').z - 0.7)
+										});
+								}
             }
 
 
