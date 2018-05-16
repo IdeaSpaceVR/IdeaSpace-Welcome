@@ -113,9 +113,19 @@ return [
           '#description' => 'Select a space to link to.',
           '#help' => 'Select a space to link to.',
           '#type' => 'space-reference',
-          '#required' => true,
+          '#required' => false,
           '#published' => true,
         ],
+
+        /*'space-link-external' => [
+          '#label' => 'External URL',
+          '#description' => 'Enter an URL',
+          '#help' => 'Enter an URL.',
+          '#type' => 'textfield',
+					'#contentformat' => 'text',
+					'#maxlength' => 1000,
+          '#required' => false,
+        ],*/
 
         'space-link-background-color' => [
           '#label' => 'Space Link Background Color',
