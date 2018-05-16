@@ -53,12 +53,13 @@ $pos_y = -1.25;
 
 @elseif ($number_elements == 3)
 
-<a-entity position="-1.3 0 0">
+<a-entity 
+		position="-1.3 0 0">
 		<a-triangle 
 				class="collidable nav-back"  
 				scale="1.9 1.9 1.9"  
-				isvr-menu-block-nav-back="activecolor: {{ $menu_block_nav_active_color }}; inactivecolor: {{ $menu_block_nav_inactive_color }}" 
 				position="-0.8 0 0" 
+				isvr-menu-block-nav-back="activecolor: {{ $menu_block_nav_active_color }}; inactivecolor: {{ $menu_block_nav_inactive_color }}"
 				rotation="0 0 90" 
 				color="{{ $menu_block_nav_inactive_color }}" 
 				vertex-a="0 0.1 0" 
@@ -67,12 +68,13 @@ $pos_y = -1.25;
 		</a-triangle>
 </a-entity>
 
-<a-entity position="1.3 0 0">
+<a-entity 
+		position="1.3 0 0">
 		<a-triangle 
 				class="collidable nav-fwd"  
 				scale="1.9 1.9 1.9"  
-				isvr-menu-block-nav-fwd="activecolor: {{ $menu_block_nav_active_color }}; inactivecolor: {{ $menu_block_nav_inactive_color }}" 
 				position="0.8 0 0" 
+				isvr-menu-block-nav-fwd="activecolor: {{ $menu_block_nav_active_color }}; inactivecolor: {{ $menu_block_nav_inactive_color }}"
 				rotation="0 0 -90" 
 				color="{{ $menu_block_nav_inactive_color }}" 
 				vertex-a="0 0.1 0" 

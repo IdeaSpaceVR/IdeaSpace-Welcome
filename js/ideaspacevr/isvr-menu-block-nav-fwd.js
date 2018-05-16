@@ -55,7 +55,18 @@ AFRAME.registerComponent('isvr-menu-block-nav-fwd', {
 						while (j < all.length) {
 								var current_number = activeEl.getAttribute('isvr-menu-block-nav').show.slice(-1);
 								var next_number = parseInt(current_number) + 1;
+
             		document.querySelector('#item-wrapper').emit('from_' + current_number + '_to_' + next_number);
+
+								/* show next menu block */
+								setTimeout(function() {
+										document.querySelector('#menu-block-' + next_number).setAttribute('visible', true);
+								}, 300);
+
+								/* workaround to hide current menu block */
+								setTimeout(function() {
+										document.querySelector('#' + activeEl.getAttribute('isvr-menu-block-nav').show.replace(/_/g, '-')).setAttribute('visible', false);
+								}, 500);
 
 								all[j].setAttribute('color', data.activecolor);
 								all[j].addState('active');

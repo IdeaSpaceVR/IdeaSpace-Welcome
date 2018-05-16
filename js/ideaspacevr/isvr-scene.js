@@ -19,6 +19,7 @@ AFRAME.registerComponent('isvr-scene', {
             //document.querySelector('#cursor').setAttribute('geometry', { radius: 0.04 });
         }
 
+
         this.el.addEventListener('enter-vr', function() {
 
 						if (AFRAME.utils.device.checkHeadsetConnected()) {

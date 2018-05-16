@@ -92,7 +92,7 @@ $menu_block_nav_active_color = (isset($content['general-settings'][0]['navigatio
 												['id' => 'menu-block-0', 'start_counter' => 0, 'count' => 9, 'position' => '0 0 0', 'visible' => 'true'])
 
 										@include('theme::partials.5_items_layout_partial', 
-												['id' => 'menu-block-1', 'start_counter' => 9, 'count' => count($content['space-links']), 'position' => $menu_block_margin . ' 0 0', 'visible' => 'true'])
+												['id' => 'menu-block-1', 'start_counter' => 9, 'count' => count($content['space-links']), 'position' => $menu_block_margin . ' 0 0', 'visible' => 'false'])
 
 								</a-entity><!-- animation-wrapper //-->
 
@@ -112,7 +112,7 @@ $menu_block_nav_active_color = (isset($content['general-settings'][0]['navigatio
 												['id' => 'menu-block-0', 'start_counter' => 0, 'count' => 9, 'position' => '0 0 0', 'visible' => 'true'])
 
 										@include('theme::partials.9_items_layout_partial', 
-												['id' => 'menu-block-1', 'start_counter' => 9, 'count' => count($content['space-links']), 'position' => $menu_block_margin . ' 0 0', 'visible' => 'true'])
+												['id' => 'menu-block-1', 'start_counter' => 9, 'count' => count($content['space-links']), 'position' => $menu_block_margin . ' 0 0', 'visible' => 'false'])
 
 								</a-entity><!-- animation-wrapper //-->
 
@@ -136,10 +136,10 @@ $menu_block_nav_active_color = (isset($content['general-settings'][0]['navigatio
 												['id' => 'menu-block-0', 'start_counter' => 0, 'count' => 9, 'position' => '0 0 0', 'visible' => 'true'])
 
 										@include('theme::partials.9_items_layout_partial', 
-												['id' => 'menu-block-1', 'start_counter' => 9, 'count' => 18, 'position' => $menu_block_margin . ' 0 0', 'visible' => 'true'])
+												['id' => 'menu-block-1', 'start_counter' => 9, 'count' => 18, 'position' => $menu_block_margin . ' 0 0', 'visible' => 'false'])
 
 										@include('theme::partials.5_items_layout_partial', 
-												['id' => 'menu-block-2', 'start_counter' => 18, 'count' => count($content['space-links']), 'position' => ($menu_block_margin * 2) . ' 0 0', 'visible' => 'true'])
+												['id' => 'menu-block-2', 'start_counter' => 18, 'count' => count($content['space-links']), 'position' => ($menu_block_margin * 2) . ' 0 0', 'visible' => 'false'])
 
 								</a-entity><!-- animation-wrapper //-->
 
@@ -163,10 +163,10 @@ $menu_block_nav_active_color = (isset($content['general-settings'][0]['navigatio
 												['id' => 'menu-block-0', 'start_counter' => 0, 'count' => 9, 'position' => '0 0 0', 'visible' => 'true'])
 
 										@include('theme::partials.9_items_layout_partial', 
-												['id' => 'menu-block-1', 'start_counter' => 9, 'count' => 18, 'position' => $menu_block_margin . ' 0 0', 'visible' => 'true'])
+												['id' => 'menu-block-1', 'start_counter' => 9, 'count' => 18, 'position' => $menu_block_margin . ' 0 0', 'visible' => 'false'])
 
 										@include('theme::partials.9_items_layout_partial', 
-												['id' => 'menu-block-2', 'start_counter' => 18, 'count' => count($content['space-links']), 'position' => ($menu_block_margin * 2) . ' 0 0', 'visible' => 'true'])
+												['id' => 'menu-block-2', 'start_counter' => 18, 'count' => count($content['space-links']), 'position' => ($menu_block_margin * 2) . ' 0 0', 'visible' => 'false'])
 
 								</a-entity><!-- animation-wrapper //-->
 
@@ -196,13 +196,13 @@ $menu_block_nav_active_color = (isset($content['general-settings'][0]['navigatio
 												['id' => 'menu-block-0', 'start_counter' => 0, 'count' => 9, 'position' => '0 0 0', 'visible' => 'true'])
 
 										@include('theme::partials.9_items_layout_partial', 
-												['id' => 'menu-block-1', 'start_counter' => 9, 'count' => 18, 'position' => $menu_block_margin . ' 0 0', 'visible' => 'true'])
+												['id' => 'menu-block-1', 'start_counter' => 9, 'count' => 18, 'position' => $menu_block_margin . ' 0 0', 'visible' => 'false'])
 
 										@include('theme::partials.9_items_layout_partial', 
-												['id' => 'menu-block-2', 'start_counter' => 18, 'count' => 27, 'position' => ($menu_block_margin * 2) . ' 0 0', 'visible' => 'true'])
+												['id' => 'menu-block-2', 'start_counter' => 18, 'count' => 27, 'position' => ($menu_block_margin * 2) . ' 0 0', 'visible' => 'false'])
 
 										@include('theme::partials.5_items_layout_partial', 
-												['id' => 'menu-block-3', 'start_counter' => 27, 'count' => count($content['space-links']), 'position' => ($menu_block_margin * 3) . ' 0 0', 'visible' => 'true'])
+												['id' => 'menu-block-3', 'start_counter' => 27, 'count' => count($content['space-links']), 'position' => ($menu_block_margin * 3) . ' 0 0', 'visible' => 'false'])
 
 								</a-entity><!-- animation-wrapper //-->
 
@@ -232,13 +232,13 @@ $menu_block_nav_active_color = (isset($content['general-settings'][0]['navigatio
 												['id' => 'menu-block-0', 'start_counter' => 0, 'count' => 9, 'position' => '0 0 0', 'visible' => 'true'])
 
 										@include('theme::partials.9_items_layout_partial', 
-												['id' => 'menu-block-1', 'start_counter' => 9, 'count' => 18, 'position' => $menu_block_margin . ' 0 0', 'visible' => 'true'])
+												['id' => 'menu-block-1', 'start_counter' => 9, 'count' => 18, 'position' => $menu_block_margin . ' 0 0', 'visible' => 'false'])
 
 										@include('theme::partials.9_items_layout_partial', 
-												['id' => 'menu-block-2', 'start_counter' => 18, 'count' => 27, 'position' => ($menu_block_margin * 2) . ' 0 0', 'visible' => 'true'])
+												['id' => 'menu-block-2', 'start_counter' => 18, 'count' => 27, 'position' => ($menu_block_margin * 2) . ' 0 0', 'visible' => 'false'])
 
 										@include('theme::partials.9_items_layout_partial', 
-												['id' => 'menu-block-3', 'start_counter' => 27, 'count' => count($content['space-links']), 'position' => ($menu_block_margin * 3) . ' 0 0', 'visible' => 'true'])
+												['id' => 'menu-block-3', 'start_counter' => 27, 'count' => count($content['space-links']), 'position' => ($menu_block_margin * 3) . ' 0 0', 'visible' => 'false'])
 
 								</a-entity><!-- animation-wrapper //-->
 

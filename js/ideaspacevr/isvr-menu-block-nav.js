@@ -39,25 +39,6 @@ AFRAME.registerComponent('isvr-menu-block-nav', {
         });
 
 
-/*				if (data.slideoutleft !== null) {
-				data.slideoutleft.addEventListener('animationcomplete', function(e) {
-console.log('her 1');
-						if (e.detail.name == 'animation__slideoutleft') {
-								data.slideoutleft.setAttribute('visible', false);	
-						}
-				});	
-				}
-
-				if (data.slideoutright !== null) {
-				data.slideoutright.addEventListener('animationcomplete', function(e) {
-console.log('her 2');
-						if (e.detail.name == 'animation__slideoutright') {
-								data.slideoutright.setAttribute('visible', false);
-						}
-				});
-				}
-*/
-
 				var all = document.querySelectorAll('.nav-circle');
 
         this.el.addEventListener('click', function() {
@@ -83,6 +64,34 @@ console.log('her 2');
 						var current_number = activeEl.getAttribute('isvr-menu-block-nav').show.slice(-1);
 
 						document.querySelector('#item-wrapper').emit('from_' + current_number + '_to_' + next_number);
+
+						 /* show next menu block */
+             setTimeout(function() {
+             		//document.querySelector('#menu-block-' + next_number).setAttribute('visible', true);
+								if (current_number < next_number) {
+										for (var j = current_number; j <= next_number; j++){
+             						document.querySelector('#menu-block-' + j).setAttribute('visible', true);
+										}
+								} else { 
+										for (var j = current_number; j >= next_number; j--){
+             						document.querySelector('#menu-block-' + j).setAttribute('visible', true);
+										}
+								}
+             }, 300);
+
+
+						setTimeout(function() {
+								//document.querySelector('#menu-block-' + current_number).setAttribute('visible', false);
+								if (current_number < next_number) {
+										for (var j = current_number; j < next_number; j++) {
+												document.querySelector('#menu-block-' + j).setAttribute('visible', false);
+										}
+								} else {
+										for (var j = current_number; j > next_number; j--) {
+												document.querySelector('#menu-block-' + j).setAttribute('visible', false);
+										}
+								}
+            }, 500);						
 
 				});
 	
