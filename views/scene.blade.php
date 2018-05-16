@@ -14,6 +14,13 @@ $menu_block_nav_active_color = (isset($content['general-settings'][0]['navigatio
 		<a-scene isvr-scene>
 
 				<a-assets>
+						@if (isset($content['space-links']))
+								@foreach ($content['space-links'] as $space_link)
+										@if (isset($space_link['space-link-image']))
+												<img src="{{ $space_link['space-link-image']['space-link-image-resized']['#uri']['#value'] }}" id="space-link-image-texture-{{ $space_link['space-link-image']['#content-id'] }}" >
+										@endif
+								@endforeach
+						@endif
  				</a-assets>
 
 
