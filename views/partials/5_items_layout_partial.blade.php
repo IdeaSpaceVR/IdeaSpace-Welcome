@@ -28,7 +28,7 @@ $position_z = 0; /* 0.09 */
 						<a-entity
 								position="0 0 0.0001"
 								geometry="primitive: plane; width: 1; height: 0.5"
-								material="shader: flat; src: url({{ $content['space-links'][$start_counter]['space-link-image']['space-link-image-resized']['#uri']['#value'] }})">
+								material="shader: flat; src: #space-link-image-texture-{{ $content['space-links'][$start_counter]['space-link-image']['#content-id'] }}">
 						</a-entity>
 						@endif
 						<a-entity
@@ -66,7 +66,7 @@ $position_z = 0; /* 0.09 */
 						<a-entity
 								position="0 0 0.0001"
 								geometry="primitive: plane; width: 1; height: 0.5"
-								material="shader: flat; src: url({{ $content['space-links'][$start_counter]['space-link-image']['space-link-image-resized']['#uri']['#value'] }})">
+								material="shader: flat; src: #space-link-image-texture-{{ $content['space-links'][$start_counter]['space-link-image']['#content-id'] }}">
 						</a-entity>
 						@endif
 						<a-entity
@@ -101,7 +101,7 @@ $position_z = 0; /* 0.09 */
 						<a-entity
 								position="0 0 0.0001"
 								geometry="primitive: plane; width: 1; height: 0.5"
-								material="shader: flat; src: url({{ $content['space-links'][$start_counter + 1]['space-link-image']['space-link-image-resized']['#uri']['#value'] }})">
+								material="shader: flat; src: #space-link-image-texture-{{ $content['space-links'][$start_counter + 1]['space-link-image']['#content-id'] }}">
 						</a-entity>
 						@endif
 						<a-entity
@@ -139,7 +139,7 @@ $position_z = 0; /* 0.09 */
 						<a-entity
 								position="0 0 0.0001"
 								geometry="primitive: plane; width: 1; height: 0.5"
-								material="shader: flat; src: url({{ $content['space-links'][$start_counter]['space-link-image']['space-link-image-resized']['#uri']['#value'] }})">
+								material="shader: flat; src: #space-link-image-texture-{{ $content['space-links'][$start_counter]['space-link-image']['#content-id'] }}">
 						</a-entity>
 						@endif
 						<a-entity
@@ -174,7 +174,7 @@ $position_z = 0; /* 0.09 */
 						<a-entity
 								position="0 0 0.0001"
 								geometry="primitive: plane; width: 1; height: 0.5"
-								material="shader: flat; src: url({{ $content['space-links'][($start_counter + 1)]['space-link-image']['space-link-image-resized']['#uri']['#value'] }})">
+								material="shader: flat; src: #space-link-image-texture-{{ $content['space-links'][($start_counter + 1)]['space-link-image']['#content-id'] }}">
 						</a-entity>
 						@endif
 						<a-entity
@@ -209,7 +209,7 @@ $position_z = 0; /* 0.09 */
 						<a-entity
 								position="0 0 0.0001"
 								geometry="primitive: plane; width: 1; height: 0.5"
-								material="shader: flat; src: url({{ $content['space-links'][($start_counter + 2)]['space-link-image']['space-link-image-resized']['#uri']['#value'] }})">
+								material="shader: flat; src: #space-link-image-texture-{{ $content['space-links'][($start_counter + 2)]['space-link-image']['#content-id'] }}">
 						</a-entity>
 						@endif
 						<a-entity
@@ -247,7 +247,7 @@ $position_z = 0; /* 0.09 */
 						<a-entity
 								position="0 0 0.0001"
 								geometry="primitive: plane; width: 1; height: 0.5"
-								material="shader: flat; src: url({{ $content['space-links'][$start_counter]['space-link-image']['space-link-image-resized']['#uri']['#value'] }})">
+								material="shader: flat; src: #space-link-image-texture-{{ $content['space-links'][$start_counter]['space-link-image']['#content-id'] }}">
 						</a-entity>
 						@endif
 						<a-entity
@@ -282,7 +282,7 @@ $position_z = 0; /* 0.09 */
 						<a-entity
 								position="0 0 0.0001"
 								geometry="primitive: plane; width: 1; height: 0.5"
-								material="shader: flat; src: url({{ $content['space-links'][($start_counter + 1)]['space-link-image']['space-link-image-resized']['#uri']['#value'] }})">
+								material="shader: flat; src: #space-link-image-texture-{{ $content['space-links'][($start_counter + 1)]['space-link-image']['#content-id'] }}">
 						</a-entity>
 						@endif
 						<a-entity
@@ -317,7 +317,7 @@ $position_z = 0; /* 0.09 */
 						<a-entity
 								position="0 0 0.0001"
 								geometry="primitive: plane; width: 1; height: 0.5"
-								material="shader: flat; src: url({{ $content['space-links'][($start_counter + 2)]['space-link-image']['space-link-image-resized']['#uri']['#value'] }})">
+								material="shader: flat; src: #space-link-image-texture-{{ $content['space-links'][($start_counter + 2)]['space-link-image']['#content-id'] }}">
 						</a-entity>
 						@endif
 						<a-entity
@@ -352,7 +352,7 @@ $position_z = 0; /* 0.09 */
 						<a-entity
 								position="0 0 0.0001"
 								geometry="primitive: plane; width: 1; height: 0.5"
-								material="shader: flat; src: url({{ $content['space-links'][($start_counter + 3)]['space-link-image']['space-link-image-resized']['#uri']['#value'] }})">
+								material="shader: flat; src: #space-link-image-texture-{{ $content['space-links'][($start_counter + 3)]['space-link-image']['#content-id'] }}">
 						</a-entity>
 						@endif
 						<a-entity
@@ -390,7 +390,7 @@ $position_z = 0; /* 0.09 */
 						<a-entity
 								position="0 0 0.0001"
 								geometry="primitive: plane; width: 1; height: 0.5"
-								material="shader: flat; src: url({{ $content['space-links'][$start_counter]['space-link-image']['space-link-image-resized']['#uri']['#value'] }})">
+								material="shader: flat; src: #space-link-image-texture-{{ $content['space-links'][$start_counter]['space-link-image']['#content-id'] }}">
 						</a-entity>
 						@endif
 						<a-entity
@@ -425,7 +425,7 @@ $position_z = 0; /* 0.09 */
 						<a-entity
 								position="0 0 0.0001"
 								geometry="primitive: plane; width: 1; height: 0.5"
-								material="shader: flat; src: url({{ $content['space-links'][($start_counter + 1)]['space-link-image']['space-link-image-resized']['#uri']['#value'] }})">
+								material="shader: flat; src: #space-link-image-texture-{{ $content['space-links'][($start_counter + 1)]['space-link-image']['#content-id'] }}">
 						</a-entity>
 						@endif
 						<a-entity
@@ -460,7 +460,7 @@ $position_z = 0; /* 0.09 */
 						<a-entity
 								position="0 0 0.0001"
 								geometry="primitive: plane; width: 1; height: 0.5"
-								material="shader: flat; src: url({{ $content['space-links'][($start_counter + 2)]['space-link-image']['space-link-image-resized']['#uri']['#value'] }})">
+								material="shader: flat; src: #space-link-image-texture-{{ $content['space-links'][($start_counter + 2)]['space-link-image']['#content-id'] }}">
 						</a-entity>
 						@endif
 						<a-entity
@@ -495,7 +495,7 @@ $position_z = 0; /* 0.09 */
 						<a-entity
 								position="0 0 0.0001"
 								geometry="primitive: plane; width: 1; height: 0.5"
-								material="shader: flat; src: url({{ $content['space-links'][($start_counter + 3)]['space-link-image']['space-link-image-resized']['#uri']['#value'] }})">
+								material="shader: flat; src: #space-link-image-texture-{{ $content['space-links'][($start_counter + 3)]['space-link-image']['#content-id'] }}">
 						</a-entity>
 						@endif
 						<a-entity
@@ -530,7 +530,7 @@ $position_z = 0; /* 0.09 */
 						<a-entity
 								position="0 0 0.0001"
 								geometry="primitive: plane; width: 1; height: 0.5"
-								material="shader: flat; src: url({{ $content['space-links'][($start_counter + 4)]['space-link-image']['space-link-image-resized']['#uri']['#value'] }})">
+								material="shader: flat; src: #space-link-image-texture-{{ $content['space-links'][($start_counter + 4)]['space-link-image']['#content-id'] }}">
 						</a-entity>
 						@endif
 						<a-entity
