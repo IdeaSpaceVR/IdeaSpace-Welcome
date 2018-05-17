@@ -117,7 +117,7 @@ return [
           '#published' => true,
         ],
 
-        /*'space-link-external' => [
+        'space-link-external' => [
           '#label' => 'External URL',
           '#description' => 'Enter an URL',
           '#help' => 'Enter an URL.',
@@ -125,7 +125,7 @@ return [
 					'#contentformat' => 'text',
 					'#maxlength' => 1000,
           '#required' => false,
-        ],*/
+        ],
 
         'space-link-background-color' => [
           '#label' => 'Space Link Background Color',

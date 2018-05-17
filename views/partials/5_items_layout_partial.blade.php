@@ -34,10 +34,17 @@ $position_z = 0; /* 0.09 */
 						<a-entity
 								geometry="primitive: plane; width: 1; height: 0.5"
 								position="0 0 0.0002"
+								@if (isset($content['space-links'][$start_counter]['space-link-image']))
+										class="title"
+										visible="false" 
+										animation__titlein="property: position; dur: 500; to: 0 0 0.07; easing: easeOutElastic; startEvents:isvr_titlein"
+										animation__titleout="property: position; dur: 500; from: 0 0 0.07; to: 0 0 0.0002; easing: easeOutElastic; startEvents:isvr_titleout"
+								@endif
 								material="shader: html; target: #space-link-title-texture-cid-{{ $content['space-links'][$start_counter]['space-link-title']['#content-id'] }}; transparent: true; ratio: width">
 						</a-entity>
 						<a-entity
 								class="collidable"
+								isvr-link="space_link_external: {{ (isset($content['space-links'][$start_counter]['space-link-external'])?$content['space-links'][$start_counter]['space-link-external']['#value']:'') }}; space_link_reference: {{ (isset($content['space-links'][$start_counter]['space-link-reference'])?$content['space-links'][$start_counter]['space-link-reference']['#space-uri']:'') }}" 
 								material="opacity: 0"
 								geometry="primitive: plane; width: 1.05; height: 0.55"
 								position="0 0 0.0003">
@@ -72,6 +79,12 @@ $position_z = 0; /* 0.09 */
 						<a-entity
 								geometry="primitive: plane; width: 1; height: 0.5"
 								position="0 0 0.0002"
+								@if (isset($content['space-links'][$start_counter]['space-link-image']))
+										class="title"
+										visible="false" 
+										animation__titlein="property: position; dur: 500; to: 0 0 0.07; easing: easeOutElastic; startEvents:isvr_titlein"
+										animation__titleout="property: position; dur: 500; from: 0 0 0.07; to: 0 0 0.0002; easing: easeOutElastic; startEvents:isvr_titleout"
+								@endif
 								material="shader: html; target: #space-link-title-texture-cid-{{ $content['space-links'][$start_counter]['space-link-title']['#content-id'] }}; transparent: true; ratio: width">
 						</a-entity>
 						<a-entity
@@ -107,6 +120,12 @@ $position_z = 0; /* 0.09 */
 						<a-entity
 								geometry="primitive: plane; width: 1; height: 0.5"
 								position="0 0 0.0002"
+								@if (isset($content['space-links'][$start_counter + 1]['space-link-image']))
+										class="title"
+										visible="false" 
+										animation__titlein="property: position; dur: 500; to: 0 0 0.07; easing: easeOutElastic; startEvents:isvr_titlein"
+										animation__titleout="property: position; dur: 500; from: 0 0 0.07; to: 0 0 0.0002; easing: easeOutElastic; startEvents:isvr_titleout"
+								@endif
 								material="shader: html; target: #space-link-title-texture-cid-{{ $content['space-links'][$start_counter + 1]['space-link-title']['#content-id'] }}; transparent: true; ratio: width">
 						</a-entity>
 						<a-entity
@@ -145,6 +164,12 @@ $position_z = 0; /* 0.09 */
 						<a-entity
 								geometry="primitive: plane; width: 1; height: 0.5"
 								position="0 0 0.0002"
+								@if (isset($content['space-links'][$start_counter]['space-link-image']))
+										class="title"
+										visible="false" 
+										animation__titlein="property: position; dur: 500; to: 0 0 0.07; easing: easeOutElastic; startEvents:isvr_titlein"
+										animation__titleout="property: position; dur: 500; from: 0 0 0.07; to: 0 0 0.0002; easing: easeOutElastic; startEvents:isvr_titleout"
+								@endif
 								material="shader: html; target: #space-link-title-texture-cid-{{ $content['space-links'][$start_counter]['space-link-title']['#content-id'] }}; transparent: true; ratio: width">
 						</a-entity>
 						<a-entity
@@ -180,6 +205,12 @@ $position_z = 0; /* 0.09 */
 						<a-entity
 								geometry="primitive: plane; width: 1; height: 0.5"
 								position="0 0 0.0002"
+								@if (isset($content['space-links'][$start_counter + 1]['space-link-image']))
+										class="title"
+										visible="false" 
+										animation__titlein="property: position; dur: 500; to: 0 0 0.07; easing: easeOutElastic; startEvents:isvr_titlein"
+										animation__titleout="property: position; dur: 500; from: 0 0 0.07; to: 0 0 0.0002; easing: easeOutElastic; startEvents:isvr_titleout"
+								@endif
 								material="shader: html; target: #space-link-title-texture-cid-{{ $content['space-links'][$start_counter + 1]['space-link-title']['#content-id'] }}; transparent: true; ratio: width">
 						</a-entity>
 						<a-entity
@@ -215,6 +246,12 @@ $position_z = 0; /* 0.09 */
 						<a-entity
 								geometry="primitive: plane; width: 1; height: 0.5"
 								position="0 0 0.0002"
+								@if (isset($content['space-links'][$start_counter + 2]['space-link-image']))
+										class="title"
+										visible="false" 
+										animation__titlein="property: position; dur: 500; to: 0 0 0.07; easing: easeOutElastic; startEvents:isvr_titlein"
+										animation__titleout="property: position; dur: 500; from: 0 0 0.07; to: 0 0 0.0002; easing: easeOutElastic; startEvents:isvr_titleout"
+								@endif
 								material="shader: html; target: #space-link-title-texture-cid-{{ $content['space-links'][$start_counter + 2]['space-link-title']['#content-id'] }}; transparent: true; ratio: width">
 						</a-entity>
 						<a-entity
@@ -253,6 +290,12 @@ $position_z = 0; /* 0.09 */
 						<a-entity
 								geometry="primitive: plane; width: 1; height: 0.5"
 								position="0 0 0.0002"
+								@if (isset($content['space-links'][$start_counter]['space-link-image']))
+										class="title"
+										visible="false" 
+										animation__titlein="property: position; dur: 500; to: 0 0 0.07; easing: easeOutElastic; startEvents:isvr_titlein"
+										animation__titleout="property: position; dur: 500; from: 0 0 0.07; to: 0 0 0.0002; easing: easeOutElastic; startEvents:isvr_titleout"
+								@endif
 								material="shader: html; target: #space-link-title-texture-cid-{{ $content['space-links'][$start_counter]['space-link-title']['#content-id'] }}; transparent: true; ratio: width">
 						</a-entity>
 						<a-entity
@@ -288,6 +331,12 @@ $position_z = 0; /* 0.09 */
 						<a-entity
 								geometry="primitive: plane; width: 1; height: 0.5"
 								position="0 0 0.0002"
+								@if (isset($content['space-links'][$start_counter + 1]['space-link-image']))
+										class="title"
+										visible="false" 
+										animation__titlein="property: position; dur: 500; to: 0 0 0.07; easing: easeOutElastic; startEvents:isvr_titlein"
+										animation__titleout="property: position; dur: 500; from: 0 0 0.07; to: 0 0 0.0002; easing: easeOutElastic; startEvents:isvr_titleout"
+								@endif
 								material="shader: html; target: #space-link-title-texture-cid-{{ $content['space-links'][$start_counter + 1]['space-link-title']['#content-id'] }}; transparent: true; ratio: width">
 						</a-entity>
 						<a-entity
@@ -323,6 +372,12 @@ $position_z = 0; /* 0.09 */
 						<a-entity
 								geometry="primitive: plane; width: 1; height: 0.5"
 								position="0 0 0.0002"
+								@if (isset($content['space-links'][$start_counter + 2]['space-link-image']))
+										class="title"
+										visible="false" 
+										animation__titlein="property: position; dur: 500; to: 0 0 0.07; easing: easeOutElastic; startEvents:isvr_titlein"
+										animation__titleout="property: position; dur: 500; from: 0 0 0.07; to: 0 0 0.0002; easing: easeOutElastic; startEvents:isvr_titleout"
+								@endif
 								material="shader: html; target: #space-link-title-texture-cid-{{ $content['space-links'][$start_counter + 2]['space-link-title']['#content-id'] }}; transparent: true; ratio: width">
 						</a-entity>
 						<a-entity
@@ -358,6 +413,12 @@ $position_z = 0; /* 0.09 */
 						<a-entity
 								geometry="primitive: plane; width: 1; height: 0.5"
 								position="0 0 0.0002"
+								@if (isset($content['space-links'][$start_counter + 3]['space-link-image']))
+										class="title"
+										visible="false" 
+										animation__titlein="property: position; dur: 500; to: 0 0 0.07; easing: easeOutElastic; startEvents:isvr_titlein"
+										animation__titleout="property: position; dur: 500; from: 0 0 0.07; to: 0 0 0.0002; easing: easeOutElastic; startEvents:isvr_titleout"
+								@endif
 								material="shader: html; target: #space-link-title-texture-cid-{{ $content['space-links'][$start_counter + 3]['space-link-title']['#content-id'] }}; transparent: true; ratio: width">
 						</a-entity>
 						<a-entity
@@ -396,6 +457,12 @@ $position_z = 0; /* 0.09 */
 						<a-entity
 								geometry="primitive: plane; width: 1; height: 0.5"
 								position="0 0 0.0002"
+								@if (isset($content['space-links'][$start_counter]['space-link-image']))
+										class="title"
+										visible="false" 
+										animation__titlein="property: position; dur: 500; to: 0 0 0.07; easing: easeOutElastic; startEvents:isvr_titlein"
+										animation__titleout="property: position; dur: 500; from: 0 0 0.07; to: 0 0 0.0002; easing: easeOutElastic; startEvents:isvr_titleout"
+								@endif
 								material="shader: html; target: #space-link-title-texture-cid-{{ $content['space-links'][$start_counter]['space-link-title']['#content-id'] }}; transparent: true; ratio: width">
 						</a-entity>
 						<a-entity
@@ -431,6 +498,12 @@ $position_z = 0; /* 0.09 */
 						<a-entity
 								geometry="primitive: plane; width: 1; height: 0.5"
 								position="0 0 0.0002"
+								@if (isset($content['space-links'][$start_counter + 1]['space-link-image']))
+										class="title"
+										visible="false" 
+										animation__titlein="property: position; dur: 500; to: 0 0 0.07; easing: easeOutElastic; startEvents:isvr_titlein"
+										animation__titleout="property: position; dur: 500; from: 0 0 0.07; to: 0 0 0.0002; easing: easeOutElastic; startEvents:isvr_titleout"
+								@endif
 								material="shader: html; target: #space-link-title-texture-cid-{{ $content['space-links'][$start_counter + 1]['space-link-title']['#content-id'] }}; transparent: true; ratio: width">
 						</a-entity>
 						<a-entity
@@ -466,6 +539,12 @@ $position_z = 0; /* 0.09 */
 						<a-entity
 								geometry="primitive: plane; width: 1; height: 0.5"
 								position="0 0 0.0002"
+								@if (isset($content['space-links'][$start_counter + 2]['space-link-image']))
+										class="title"
+										visible="false" 
+										animation__titlein="property: position; dur: 500; to: 0 0 0.07; easing: easeOutElastic; startEvents:isvr_titlein"
+										animation__titleout="property: position; dur: 500; from: 0 0 0.07; to: 0 0 0.0002; easing: easeOutElastic; startEvents:isvr_titleout"
+								@endif
 								material="shader: html; target: #space-link-title-texture-cid-{{ $content['space-links'][$start_counter + 2]['space-link-title']['#content-id'] }}; transparent: true; ratio: width">
 						</a-entity>
 						<a-entity
@@ -501,6 +580,12 @@ $position_z = 0; /* 0.09 */
 						<a-entity
 								geometry="primitive: plane; width: 1; height: 0.5"
 								position="0 0 0.0002"
+								@if (isset($content['space-links'][$start_counter + 3]['space-link-image']))
+										class="title"
+										visible="false" 
+										animation__titlein="property: position; dur: 500; to: 0 0 0.07; easing: easeOutElastic; startEvents:isvr_titlein"
+										animation__titleout="property: position; dur: 500; from: 0 0 0.07; to: 0 0 0.0002; easing: easeOutElastic; startEvents:isvr_titleout"
+								@endif
 								material="shader: html; target: #space-link-title-texture-cid-{{ $content['space-links'][$start_counter + 3]['space-link-title']['#content-id'] }}; transparent: true; ratio: width">
 						</a-entity>
 						<a-entity
@@ -536,6 +621,12 @@ $position_z = 0; /* 0.09 */
 						<a-entity
 								geometry="primitive: plane; width: 1; height: 0.5"
 								position="0 0 0.0002"
+								@if (isset($content['space-links'][$start_counter + 4]['space-link-image']))
+										class="title"
+										visible="false" 
+										animation__titlein="property: position; dur: 500; to: 0 0 0.07; easing: easeOutElastic; startEvents:isvr_titlein"
+										animation__titleout="property: position; dur: 500; from: 0 0 0.07; to: 0 0 0.0002; easing: easeOutElastic; startEvents:isvr_titleout"
+								@endif
 								material="shader: html; target: #space-link-title-texture-cid-{{ $content['space-links'][$start_counter + 4]['space-link-title']['#content-id'] }}; transparent: true; ratio: width">
 						</a-entity>
 						<a-entity

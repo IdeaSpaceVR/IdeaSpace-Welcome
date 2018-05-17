@@ -14,10 +14,10 @@ AFRAME.registerComponent('isvr-scene', {
   
     init: function () {
 
-        if (!AFRAME.utils.device.checkHeadsetConnected()) {
+        //if (!AFRAME.utils.device.checkHeadsetConnected()) {
             //document.querySelector('#no-hmd-intro').setAttribute('visible', true);
             //document.querySelector('#cursor').setAttribute('geometry', { radius: 0.04 });
-        }
+        //}
 
 
         this.el.addEventListener('enter-vr', function() {
@@ -77,11 +77,29 @@ AFRAME.registerComponent('isvr-scene', {
 				for (var j = 0; j < collidables.length; j++) {
 
 						collidables[j].addEventListener('mouseenter', function(e) {
+
 								e.target.emit('isvr_mouseenter');
+
+								for (var i = 0; i < e.target.parentNode.childNodes.length; i++) {
+										if (e.target.parentNode.childNodes[i].className == "title") {
+												e.target.parentNode.childNodes[i].emit('isvr_titlein');
+												e.target.parentNode.childNodes[i].setAttribute('visible', true);
+												break;
+										}        
+								}
 						});
 
 						collidables[j].addEventListener('mouseleave', function(e) {
+
 								e.target.emit('isvr_mouseleave');
+
+								for (var i = 0; i < e.target.parentNode.childNodes.length; i++) {
+										if (e.target.parentNode.childNodes[i].className == "title") {
+												e.target.parentNode.childNodes[i].emit('isvr_titleout');
+												e.target.parentNode.childNodes[i].setAttribute('visible', false);
+												break;
+										}        
+								}
 						});
 				}
     }
