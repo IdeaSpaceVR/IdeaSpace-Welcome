@@ -17,14 +17,18 @@ $menu_block_nav_active_color = (isset($content['general-settings'][0]['navigatio
 						@if (isset($content['space-links']))
 								@foreach ($content['space-links'] as $space_link)
 										@if (isset($space_link['space-link-image']))
-												<img src="{{ $space_link['space-link-image']['space-link-image-resized']['#uri']['#value'] }}" id="space-link-image-texture-{{ $space_link['space-link-image']['#content-id'] }}" >
+												<img src="{{ $space_link['space-link-image']['space-link-image-resized']['#uri']['#value'] }}" id="space-link-image-texture-{{ $space_link['space-link-image']['#content-id'] }}" crossorigin>
 										@endif
 								@endforeach
 						@endif
+						<audio id="audio-click" src="{{ url($theme_dir . '/assets/audio/ui_click0.ogg') }}" response-type="arraybuffer"></audio>
  				</a-assets>
 
 
-				 <a-entity id="camera-wrapper" position="0 1.6 0">
+				<a-entity id="sound-click" sound="src: #audio-click"></a-entity>
+
+
+				<a-entity id="camera-wrapper" position="0 1.6 0">
             <a-entity
                 id="camera"
                 camera="far: 10000; fov: 80; near: 0.1"
@@ -280,7 +284,6 @@ $menu_block_nav_active_color = (isset($content['general-settings'][0]['navigatio
     <script>
     (function() {
         /* DOM is loaded */
-        //isvr_assets.init('{{ $space_url }}/content/photo-spheres');
     })();
     </script>
 

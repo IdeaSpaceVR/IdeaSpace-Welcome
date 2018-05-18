@@ -43,7 +43,7 @@ $position_z = 0; /* 0.09 */
                 material="shader: html; target: #space-link-title-texture-cid-{{ $content['space-links'][$start_counter]['space-link-title']['#content-id'] }}; transparent: true; ratio: width">
             </a-entity>
             <a-entity
-                class="collidable"
+                class="collidable wrapper"
                 material="opacity: 0"
                 geometry="primitive: plane; width: 1.05; height: 0.55"
                 position="0 0 0.0003">
@@ -84,7 +84,7 @@ $position_z = 0; /* 0.09 */
                 material="shader: html; target: #space-link-title-texture-cid-{{ $content['space-links'][$start_counter + 1]['space-link-title']['#content-id'] }}; transparent: true; ratio: width">
             </a-entity>
             <a-entity
-                class="collidable"
+                class="collidable wrapper"
                 material="opacity: 0"
                 geometry="primitive: plane; width: 1.05; height: 0.55"
                 position="0 0 0.0003">
@@ -125,7 +125,7 @@ $position_z = 0; /* 0.09 */
                 material="shader: html; target: #space-link-title-texture-cid-{{ $content['space-links'][$start_counter + 2]['space-link-title']['#content-id'] }}; transparent: true; ratio: width">
             </a-entity>
             <a-entity
-                class="collidable"
+                class="collidable wrapper"
                 material="opacity: 0"
                 geometry="primitive: plane; width: 1.05; height: 0.55"
                 position="0 0 0.0003">
@@ -166,7 +166,7 @@ $position_z = 0; /* 0.09 */
                 material="shader: html; target: #space-link-title-texture-cid-{{ $content['space-links'][$start_counter + 3]['space-link-title']['#content-id'] }}; transparent: true; ratio: width">
             </a-entity>
             <a-entity
-                class="collidable"
+                class="collidable wrapper"
                 material="opacity: 0"
                 geometry="primitive: plane; width: 1.05; height: 0.55"
                 position="0 0 0.0003">
@@ -207,7 +207,7 @@ $position_z = 0; /* 0.09 */
                 material="shader: html; target: #space-link-title-texture-cid-{{ $content['space-links'][$start_counter + 4]['space-link-title']['#content-id'] }}; transparent: true; ratio: width">
             </a-entity>
             <a-entity
-                class="collidable"
+                class="collidable wrapper"
                 material="opacity: 0"
                 geometry="primitive: plane; width: 1.05; height: 0.55"
                 position="0 0 0.0003">
@@ -248,7 +248,7 @@ $position_z = 0; /* 0.09 */
                 material="shader: html; target: #space-link-title-texture-cid-{{ $content['space-links'][$start_counter + 5]['space-link-title']['#content-id'] }}; transparent: true; ratio: width">
             </a-entity>
             <a-entity
-                class="collidable"
+                class="collidable wrapper"
                 material="opacity: 0"
                 geometry="primitive: plane; width: 1.05; height: 0.55"
                 position="0 0 0.0003">
@@ -292,7 +292,7 @@ $position_z = 0; /* 0.09 */
                 material="shader: html; target: #space-link-title-texture-cid-{{ $content['space-links'][$start_counter]['space-link-title']['#content-id'] }}; transparent: true; ratio: width">
             </a-entity>
             <a-entity
-                class="collidable"
+                class="collidable wrapper"
                 material="opacity: 0"
                 geometry="primitive: plane; width: 1.05; height: 0.55"
                 position="0 0 0.0003">
@@ -333,7 +333,7 @@ $position_z = 0; /* 0.09 */
                 material="shader: html; target: #space-link-title-texture-cid-{{ $content['space-links'][$start_counter + 1]['space-link-title']['#content-id'] }}; transparent: true; ratio: width">
             </a-entity>
             <a-entity
-                class="collidable"
+                class="collidable wrapper"
                 material="opacity: 0"
                 geometry="primitive: plane; width: 1.05; height: 0.55"
                 position="0 0 0.0003">
@@ -374,7 +374,7 @@ $position_z = 0; /* 0.09 */
                 material="shader: html; target: #space-link-title-texture-cid-{{ $content['space-links'][$start_counter + 2]['space-link-title']['#content-id'] }}; transparent: true; ratio: width">
             </a-entity>
             <a-entity
-                class="collidable"
+                class="collidable wrapper"
                 material="opacity: 0"
                 geometry="primitive: plane; width: 1.05; height: 0.55"
                 position="0 0 0.0003">
@@ -415,7 +415,7 @@ $position_z = 0; /* 0.09 */
                 material="shader: html; target: #space-link-title-texture-cid-{{ $content['space-links'][$start_counter + 3]['space-link-title']['#content-id'] }}; transparent: true; ratio: width">
             </a-entity>
             <a-entity
-                class="collidable"
+                class="collidable wrapper"
                 material="opacity: 0"
                 geometry="primitive: plane; width: 1.05; height: 0.55"
                 position="0 0 0.0003">
@@ -456,7 +456,7 @@ $position_z = 0; /* 0.09 */
                 material="shader: html; target: #space-link-title-texture-cid-{{ $content['space-links'][$start_counter + 4]['space-link-title']['#content-id'] }}; transparent: true; ratio: width">
             </a-entity>
             <a-entity
-                class="collidable"
+                class="collidable wrapper"
                 material="opacity: 0"
                 geometry="primitive: plane; width: 1.05; height: 0.55"
                 position="0 0 0.0003">
@@ -497,7 +497,7 @@ $position_z = 0; /* 0.09 */
                 material="shader: html; target: #space-link-title-texture-cid-{{ $content['space-links'][$start_counter + 5]['space-link-title']['#content-id'] }}; transparent: true; ratio: width">
             </a-entity>
             <a-entity
-                class="collidable"
+                class="collidable wrapper"
                 material="opacity: 0"
                 geometry="primitive: plane; width: 1.05; height: 0.55"
                 position="0 0 0.0003">
@@ -538,7 +538,7 @@ $position_z = 0; /* 0.09 */
                 material="shader: html; target: #space-link-title-texture-cid-{{ $content['space-links'][$start_counter + 6]['space-link-title']['#content-id'] }}; transparent: true; ratio: width">
             </a-entity>
             <a-entity
-                class="collidable"
+                class="collidable wrapper"
                 material="opacity: 0"
                 geometry="primitive: plane; width: 1.05; height: 0.55"
                 position="0 0 0.0003">
@@ -582,7 +582,7 @@ $position_z = 0; /* 0.09 */
                 material="shader: html; target: #space-link-title-texture-cid-{{ $content['space-links'][$start_counter]['space-link-title']['#content-id'] }}; transparent: true; ratio: width">
             </a-entity>
             <a-entity
-                class="collidable"
+                class="collidable wrapper"
                 material="opacity: 0"
                 geometry="primitive: plane; width: 1.05; height: 0.55"
                 position="0 0 0.0003">
@@ -623,7 +623,7 @@ $position_z = 0; /* 0.09 */
                 material="shader: html; target: #space-link-title-texture-cid-{{ $content['space-links'][$start_counter + 1]['space-link-title']['#content-id'] }}; transparent: true; ratio: width">
             </a-entity>
             <a-entity
-                class="collidable"
+                class="collidable wrapper"
                 material="opacity: 0"
                 geometry="primitive: plane; width: 1.05; height: 0.55"
                 position="0 0 0.0003">
@@ -664,7 +664,7 @@ $position_z = 0; /* 0.09 */
                 material="shader: html; target: #space-link-title-texture-cid-{{ $content['space-links'][$start_counter + 2]['space-link-title']['#content-id'] }}; transparent: true; ratio: width">
             </a-entity>
             <a-entity
-                class="collidable"
+                class="collidable wrapper"
                 material="opacity: 0"
                 geometry="primitive: plane; width: 1.05; height: 0.55"
                 position="0 0 0.0003">
@@ -705,7 +705,7 @@ $position_z = 0; /* 0.09 */
                 material="shader: html; target: #space-link-title-texture-cid-{{ $content['space-links'][$start_counter + 3]['space-link-title']['#content-id'] }}; transparent: true; ratio: width">
             </a-entity>
             <a-entity
-                class="collidable"
+                class="collidable wrapper"
                 material="opacity: 0"
                 geometry="primitive: plane; width: 1.05; height: 0.55"
                 position="0 0 0.0003">
@@ -746,7 +746,7 @@ $position_z = 0; /* 0.09 */
                 material="shader: html; target: #space-link-title-texture-cid-{{ $content['space-links'][$start_counter + 4]['space-link-title']['#content-id'] }}; transparent: true; ratio: width">
             </a-entity>
             <a-entity
-                class="collidable"
+                class="collidable wrapper"
                 material="opacity: 0"
                 geometry="primitive: plane; width: 1.05; height: 0.55"
                 position="0 0 0.0003">
@@ -787,7 +787,7 @@ $position_z = 0; /* 0.09 */
                 material="shader: html; target: #space-link-title-texture-cid-{{ $content['space-links'][$start_counter + 5]['space-link-title']['#content-id'] }}; transparent: true; ratio: width">
             </a-entity>
             <a-entity
-                class="collidable"
+                class="collidable wrapper"
                 material="opacity: 0"
                 geometry="primitive: plane; width: 1.05; height: 0.55"
                 position="0 0 0.0003">
@@ -828,7 +828,7 @@ $position_z = 0; /* 0.09 */
                 material="shader: html; target: #space-link-title-texture-cid-{{ $content['space-links'][$start_counter + 6]['space-link-title']['#content-id'] }}; transparent: true; ratio: width">
             </a-entity>
             <a-entity
-                class="collidable"
+                class="collidable wrapper"
                 material="opacity: 0"
                 geometry="primitive: plane; width: 1.05; height: 0.55"
                 position="0 0 0.0003">
@@ -869,7 +869,7 @@ $position_z = 0; /* 0.09 */
                 material="shader: html; target: #space-link-title-texture-cid-{{ $content['space-links'][$start_counter + 7]['space-link-title']['#content-id'] }}; transparent: true; ratio: width">
             </a-entity>
             <a-entity
-                class="collidable"
+                class="collidable wrapper"
                 material="opacity: 0"
                 geometry="primitive: plane; width: 1.05; height: 0.55"
                 position="0 0 0.0003">
@@ -913,7 +913,7 @@ $position_z = 0; /* 0.09 */
                 material="shader: html; target: #space-link-title-texture-cid-{{ $content['space-links'][$start_counter]['space-link-title']['#content-id'] }}; transparent: true; ratio: width">
             </a-entity>
             <a-entity
-                class="collidable"
+                class="collidable wrapper"
                 material="opacity: 0"
                 geometry="primitive: plane; width: 1.05; height: 0.55"
                 position="0 0 0.0003">
@@ -954,7 +954,7 @@ $position_z = 0; /* 0.09 */
                 material="shader: html; target: #space-link-title-texture-cid-{{ $content['space-links'][$start_counter + 1]['space-link-title']['#content-id'] }}; transparent: true; ratio: width">
             </a-entity>
             <a-entity
-                class="collidable"
+                class="collidable wrapper"
                 material="opacity: 0"
                 geometry="primitive: plane; width: 1.05; height: 0.55"
                 position="0 0 0.0003">
@@ -995,7 +995,7 @@ $position_z = 0; /* 0.09 */
                 material="shader: html; target: #space-link-title-texture-cid-{{ $content['space-links'][$start_counter + 2]['space-link-title']['#content-id'] }}; transparent: true; ratio: width">
             </a-entity>
             <a-entity
-                class="collidable"
+                class="collidable wrapper"
                 material="opacity: 0"
                 geometry="primitive: plane; width: 1.05; height: 0.55"
                 position="0 0 0.0003">
@@ -1036,7 +1036,7 @@ $position_z = 0; /* 0.09 */
                 material="shader: html; target: #space-link-title-texture-cid-{{ $content['space-links'][$start_counter + 3]['space-link-title']['#content-id'] }}; transparent: true; ratio: width">
             </a-entity>
             <a-entity
-                class="collidable"
+                class="collidable wrapper"
                 material="opacity: 0"
                 geometry="primitive: plane; width: 1.05; height: 0.55"
                 position="0 0 0.0003">
@@ -1077,7 +1077,7 @@ $position_z = 0; /* 0.09 */
                 material="shader: html; target: #space-link-title-texture-cid-{{ $content['space-links'][$start_counter + 4]['space-link-title']['#content-id'] }}; transparent: true; ratio: width">
             </a-entity>
             <a-entity
-                class="collidable"
+                class="collidable wrapper"
                 material="opacity: 0"
                 geometry="primitive: plane; width: 1.05; height: 0.55"
                 position="0 0 0.0003">
@@ -1118,7 +1118,7 @@ $position_z = 0; /* 0.09 */
                 material="shader: html; target: #space-link-title-texture-cid-{{ $content['space-links'][$start_counter + 5]['space-link-title']['#content-id'] }}; transparent: true; ratio: width">
             </a-entity>
             <a-entity
-                class="collidable"
+                class="collidable wrapper"
                 material="opacity: 0"
                 geometry="primitive: plane; width: 1.05; height: 0.55"
                 position="0 0 0.0003">
@@ -1159,7 +1159,7 @@ $position_z = 0; /* 0.09 */
                 material="shader: html; target: #space-link-title-texture-cid-{{ $content['space-links'][$start_counter + 6]['space-link-title']['#content-id'] }}; transparent: true; ratio: width">
             </a-entity>
             <a-entity
-                class="collidable"
+                class="collidable wrapper"
                 material="opacity: 0"
                 geometry="primitive: plane; width: 1.05; height: 0.55"
                 position="0 0 0.0003">
@@ -1200,7 +1200,7 @@ $position_z = 0; /* 0.09 */
                 material="shader: html; target: #space-link-title-texture-cid-{{ $content['space-links'][$start_counter + 7]['space-link-title']['#content-id'] }}; transparent: true; ratio: width">
             </a-entity>
             <a-entity
-                class="collidable"
+                class="collidable wrapper"
                 material="opacity: 0"
                 geometry="primitive: plane; width: 1.05; height: 0.55"
                 position="0 0 0.0003">
@@ -1241,7 +1241,7 @@ $position_z = 0; /* 0.09 */
                 material="shader: html; target: #space-link-title-texture-cid-{{ $content['space-links'][$start_counter + 8]['space-link-title']['#content-id'] }}; transparent: true; ratio: width">
             </a-entity>
             <a-entity
-                class="collidable"
+                class="collidable wrapper"
                 material="opacity: 0"
                 geometry="primitive: plane; width: 1.05; height: 0.55"
                 position="0 0 0.0003">

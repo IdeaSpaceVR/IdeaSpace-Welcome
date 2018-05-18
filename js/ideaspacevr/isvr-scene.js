@@ -73,6 +73,7 @@ AFRAME.registerComponent('isvr-scene', {
         }*/
 
 				/* trigger custom events */
+				var soundClick = document.querySelector('#sound-click');
 				var collidables = document.querySelectorAll('.collidable');
 				for (var j = 0; j < collidables.length; j++) {
 
@@ -87,6 +88,12 @@ AFRAME.registerComponent('isvr-scene', {
 												break;
 										}        
 								}
+
+								if (e.target.classList.contains('wrapper')) {
+										soundClick.components.sound.stopSound();
+										soundClick.components.sound.playSound();
+								}
+
 						});
 
 						collidables[j].addEventListener('mouseleave', function(e) {
