@@ -27,6 +27,25 @@ $menu_block_nav_active_color = (isset($content['general-settings'][0]['navigatio
 
 				<a-entity id="sound-click" sound="src: #audio-click"></a-entity>
 
+<?php // environment with hills
+      // environment with mountains
+			// environment with trees
+			// environment with arches
+			// tron environment 
+			// color gradient environment 
+		/*		<a-entity environment="groundTexture: none; groundYScale: 20; groundColor: {{ $content['general-settings'][0]['ground-color'] }}"></a-entity>
+
+				<a-entity environment="groundTexture: none; groundYScale: 40; groundColor: {{ $content['general-settings'][0]['ground-color'] }}"></a-entity>
+
+				<a-entity environment="skyType: atmosphere; preset: forest; groundColor: {{ $content['general-settings'][0]['ground-color'] }}"></a-entity>
+
+				<a-entity environment="preset: arches; groundColor: {{ $content['general-settings'][0]['ground-color'] }}"></a-entity>
+
+				<a-entity environment="preset: tron; dressing: none; groundColor: {{ $content['general-settings'][0]['ground-color'] }}"></a-entity>
+*/
+?>
+
+				<a-entity environment="groundTexture: none; groundColor: #00ff00; skyType: gradient; skyColor: #ff00ff"></a-entity>
 
 				<a-entity id="camera-wrapper" position="0 1.6 0">
             <a-entity
