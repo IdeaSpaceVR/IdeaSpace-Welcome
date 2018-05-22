@@ -52,7 +52,7 @@ $menu_block_nav_active_color = (isset($content['general-settings'][0]['navigatio
 
 						@elseif ($content['general-settings'][0]['environment']['#value'] == 'background-color')
 
-								<style>.cover { background-color: {{ $content['general-settings'][0]['background-color']['#value'] }} }</style>
+								<a-sky color="{{ $content['general-settings'][0]['background-color']['#value'] }}"></a-sky>
 						@endif
 
 				@endif
@@ -81,23 +81,23 @@ $menu_block_nav_active_color = (isset($content['general-settings'][0]['navigatio
 
 
 						@if (isset($content['general-settings'][0]['logo']))
-						 <a-entity
-                position="0 1.4 0"
+						<a-entity
+            		position="0 1.4 0"
                 scale="0.5 0.5"
-								@if ($content['general-settings'][0]['logo-aspect-ratio']['#value'] == '4-3')
-                		geometry="primitive: plane; width: 1; height: 0.75"
-                @elseif ($content['general-settings'][0]['logo-aspect-ratio']['#value'] == '3-4')
-                		geometry="primitive: plane; width: 0.75; height: 1"
-                @elseif ($content['general-settings'][0]['logo-aspect-ratio']['#value'] == '16-9')
-                		geometry="primitive: plane; width: 1; height: 0.5625"
-                @elseif ($content['general-settings'][0]['logo-aspect-ratio']['#value'] == '9-16')
-                		geometry="primitive: plane; width: 0.5625; height: 1"
-                @elseif ($content['general-settings'][0]['logo-aspect-ratio']['#value'] == '1-1')
-                		geometry="primitive: plane; width: 1; height: 1"
-                @endif
-                material="shader: flat; src: url({{ $content['general-settings'][0]['logo']['logo-image-resized']['#uri']['#value'] }})">
-            </a-entity>
-						@else
+										@if ($content['general-settings'][0]['logo-aspect-ratio']['#value'] == '4-3')
+												geometry="primitive: plane; width: 1; height: 0.75"
+										@elseif ($content['general-settings'][0]['logo-aspect-ratio']['#value'] == '3-4')
+												geometry="primitive: plane; width: 0.75; height: 1"
+										@elseif ($content['general-settings'][0]['logo-aspect-ratio']['#value'] == '16-9')
+												geometry="primitive: plane; width: 1; height: 0.5625"
+										@elseif ($content['general-settings'][0]['logo-aspect-ratio']['#value'] == '9-16')
+												geometry="primitive: plane; width: 0.5625; height: 1"
+										@elseif ($content['general-settings'][0]['logo-aspect-ratio']['#value'] == '1-1')
+												geometry="primitive: plane; width: 1; height: 1"
+										@endif
+										material="shader: flat; src: url({{ $content['general-settings'][0]['logo']['logo-image-resized']['#uri']['#value'] }})">
+						</a-entity>
+						@elseif (isset($content['general-settings'][0]['space-title']))
 						<a-entity
 								geometry="primitive: plane; width: 4; height: 0.5"
 								position="0 1.4 0"
@@ -297,9 +297,11 @@ $menu_block_nav_active_color = (isset($content['general-settings'][0]['navigatio
     </div>
 
 
-    <div id="space-title-texture" style="color:@if (isset($content['general-settings'][0]['space-title-color'])) {{ $content['general-settings'][0]['space-title-color']['#value'] }} @else #FFFFFF @endif">
-    {!! $space_title !!}
+		@if (isset($content['general-settings'][0]['space-title']))
+    <div id="space-title-texture"> 
+    {!! $content['general-settings'][0]['space-title']['#value'] !!}
     </div>
+		@endif
 
 
     @if (isset($content['space-links']))

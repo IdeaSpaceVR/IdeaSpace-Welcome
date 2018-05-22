@@ -21,6 +21,16 @@ return [
       '#max-values' => 1,
       '#fields' => [
 
+        'space-title' => [
+          '#label' => 'Space Title',
+          '#description' => 'Enter a title.',
+          '#help' => 'Enter a title.',
+          '#type' => 'textfield',
+					'#contentformat' => 'html/text',
+					'#maxlength' => 1000,
+          '#required' => false,
+        ],
+
 				'logo' => [
           '#label' => 'Logo',
           '#description' => 'Upload an image.',
@@ -38,15 +48,6 @@ return [
           '#type' => 'options-select',
           '#options' => ['4-3' => '4 : 3', '3-4' => '3 : 4', '16-9' => '16 : 9', '9-16' => '9 : 16', '1-1' => '1 : 1'],
           '#required' => true,
-        ],
-
-        'space-title-color' => [
-          '#label' => 'Space Title Color',
-          '#description' => 'Select a text color.',
-          '#help' => 'Select a text color.',
-          '#type' => 'color',
-					'#default_value' => '#FFFFFF',
-          '#required' => false,
         ],
 
         'navigation-active-color' => [
