@@ -21,31 +21,42 @@ $menu_block_nav_active_color = (isset($content['general-settings'][0]['navigatio
 										@endif
 								@endforeach
 						@endif
-						<audio id="audio-click" src="{{ url($theme_dir . '/assets/audio/ui_click0.ogg') }}" response-type="arraybuffer"></audio>
+						<audio id="audio-click" src="{{ url($theme_dir . '/assets/audio/ui_click0.ogg') }}" response-type="arraybuffer" crossorigin></audio>
  				</a-assets>
 
 
 				<a-entity id="sound-click" sound="src: #audio-click"></a-entity>
 
-<?php // environment with hills
-      // environment with mountains
-			// environment with trees
-			// environment with arches
-			// tron environment 
-			// color gradient environment 
-		/*		<a-entity environment="groundTexture: none; groundYScale: 20; groundColor: {{ $content['general-settings'][0]['ground-color'] }}"></a-entity>
+			
+				@if (isset($content['general-settings'][0]['environment']))
 
-				<a-entity environment="groundTexture: none; groundYScale: 40; groundColor: {{ $content['general-settings'][0]['ground-color'] }}"></a-entity>
+						@if ($content['general-settings'][0]['environment']['#value'] == 'environment-hills')
 
-				<a-entity environment="skyType: atmosphere; preset: forest; groundColor: {{ $content['general-settings'][0]['ground-color'] }}"></a-entity>
+								<a-entity environment="groundTexture: {{ $content['general-settings'][0]['environment-ground-texture']['#value'] }}; groundYScale: 20; groundColor: {{ $content['general-settings'][0]['environment-ground-color']['#value'] }}"></a-entity>
 
-				<a-entity environment="preset: arches; groundColor: {{ $content['general-settings'][0]['ground-color'] }}"></a-entity>
+						@elseif ($content['general-settings'][0]['environment']['#value'] == 'environment-mountains')
 
-				<a-entity environment="preset: tron; dressing: none; groundColor: {{ $content['general-settings'][0]['ground-color'] }}"></a-entity>
-*/
-?>
+								<a-entity environment="groundTexture: {{ $content['general-settings'][0]['environment-ground-texture']['#value'] }}; groundYScale: 40; groundColor: {{ $content['general-settings'][0]['environment-ground-color']['#value'] }}"></a-entity>
 
-				<a-entity environment="groundTexture: none; groundColor: #00ff00; skyType: gradient; skyColor: #ff00ff"></a-entity>
+						@elseif ($content['general-settings'][0]['environment']['#value'] == 'environment-trees')
+
+								<a-entity environment="groundTexture: {{ $content['general-settings'][0]['environment-ground-texture']['#value'] }}; skyType: atmosphere; preset: forest; groundColor: {{ $content['general-settings'][0]['environment-ground-color']['#value'] }}"></a-entity>
+
+						@elseif ($content['general-settings'][0]['environment']['#value'] == 'environment-arches')
+
+								<a-entity environment="groundTexture: {{ $content['general-settings'][0]['environment-ground-texture']['#value'] }}; preset: arches; groundColor: {{ $content['general-settings'][0]['environment-ground-color']['#value'] }}"></a-entity>
+
+						@elseif ($content['general-settings'][0]['environment']['#value'] == 'environment-tron')
+
+								<a-entity environment="preset: tron; dressing: none; groundColor: {{ $content['general-settings'][0]['environment-ground-color']['#value'] }}"></a-entity>
+
+						@elseif ($content['general-settings'][0]['environment']['#value'] == 'background-color')
+
+								<style>.cover { background-color: {{ $content['general-settings'][0]['background-color']['#value'] }} }</style>
+						@endif
+
+				@endif
+
 
 				<a-entity id="camera-wrapper" position="0 1.6 0">
             <a-entity

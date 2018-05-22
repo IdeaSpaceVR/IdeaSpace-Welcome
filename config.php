@@ -73,8 +73,49 @@ return [
           '#help' => 'Select an environment.',
           '#type' => 'options-select',
           '#required' => true,
-          '#options' => ['gradient' => 'Gradient', 'north-american-nature' => 'North American Nature'],
-          '#default_value' => 'north-american-nature',
+          '#options' => [
+							'none' => 'None', 
+							'environment-hills' => 'Environment with hills', 
+							'environment-mountains' => 'Environment with mountains',
+							'environment-trees' => 'Environment with trees',
+							'environment-arches' => 'Environment with arches',
+							'environment-tron' => 'Tron',
+							'background-color' => 'Background Color',
+					],
+          '#default_value' => 'none',
+        ],
+
+        'environment-ground-color' => [
+          '#label' => 'Environment Ground Color',
+          '#description' => 'Select a ground color.',
+          '#help' => 'Select a ground color.',
+          '#type' => 'color',
+					'#default_value' => '#CCCCCC',
+          '#required' => false,
+        ],
+
+        'environment-ground-texture' => [
+          '#label' => 'Environment Ground Texture',
+          '#description' => 'Select a ground texture.',
+          '#help' => 'Select a ground texture.',
+          '#type' => 'options-select',
+          '#required' => false,
+          '#options' => [
+							'walkernoise' => 'Walkernoise',
+							'checkerboard' => 'Checkerboard',
+							'squares' => 'Squares',
+							'none' => 'None', 
+					],
+          '#default_value' => 'walkernoise',
+        ],
+
+        'background-color' => [
+          '#label' => 'Background Color',
+          '#description' => 'Select a background color.',
+          '#help' => 'Select a background color.',
+          '#type' => 'color',
+					'#default_value' => '#000000',
+          '#required' => false,
         ],
 
       ],
