@@ -1,4 +1,4 @@
-# IdeaSpace Welcome! theme
+# IdeaSpace Welcome theme
 
 This theme comes pre-installed with the <a href="https://github.com/IdeaSpaceVR/IdeaSpace">IdeaSpaceVR CMS</a>.
 
